@@ -1,0 +1,21 @@
+/*
+
+Kanban TaskBoard 2.0.9
+Copyright(c) 2009-2016 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/license
+
+*/
+.sch-columnfilter-list li {
+    height           : 30px;
+    border           : 0;
+    padding-left     : 28px;
+    line-height      : 30px;
+    font-size        : 1.2em;
+    background-color : transparent !important;
+}
+
+.sch-columnfilter-list li.x-boundlist-selected {
+    background      : transparent url(../images/check.png) no-repeat 3px center;
+    background-size : 20px;
+}

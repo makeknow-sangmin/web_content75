@@ -1,0 +1,48 @@
+/*
+
+Kanban TaskBoard 2.0.9
+Copyright(c) 2009-2016 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/license
+
+*/
+/*
+  Icon taken from https://useiconic.com/open/
+*/
+
+.sch-task-menu-handle {
+    position        : absolute;
+    width           : 13px;
+    height          : 13px;
+    padding         : 1px;
+    display         : none;
+    background      : transparent url(../images/settings.png) no-repeat left center;
+    background-size : contain;
+    opacity         : 0.3;
+    z-index         : 20;
+    right           : 3px;
+    top             : 3px;
+}
+
+.x-ie8m .sch-task-menu-handle {
+    background       : transparent url(../images/settings16x16.png) no-repeat left center;
+    opacity          : 0.3;
+    -ms-filter       : "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    height           : 16px;
+    width            : 16px;
+}
+
+.sch-task-menu-handle:hover {
+    opacity         : 0.8;
+    -ms-filter      : "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.sch-task-dd .sch-task-menu-handle {
+    display : none;
+}
+
+.sch-taskboard-with-menu [size=mini] .sch-task-menu-handle {
+    right : 5px;
+    top   : 6px;
+}
+

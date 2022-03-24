@@ -1,0 +1,431 @@
+/*-------------- Common --------------*/
+/*@font-face	{font-family:'나눔고딕','NanumGothic';src:url('../fonts/NanumGothic.eot');src:url('../fonts/NanumGothic.woff')}*/
+html,body	{height:100%;}
+body {height:100%;overflow:auto;font-family:'현대하모니 L','Malgun Gothic';font-size:12px;background:url('../images/mcis2/con_bg_left.png') repeat-y left top;}
+
+/* Layout */
+#wrap			{width:100%;height:100%;margin:0 auto;background:url('../images/mcis2/con_bg_right.png') repeat-y right top;}
+#header			{width:100%;height:84px;position:fixed; left:0; right:0; top:0;background:url('../images/mcis2/con_bg_top.png') no-repeat right top;}
+
+#container		{width:100%;height:auto;background-image:auto;background:url('../images/mcis2/con_bg_left.png') repeat-y left top;background-attachment:fixed;}
+#container:after{display:block;clear:both;content:'';}
+
+#content		{height:auto;min-height:688px;padding:84px 18px 0px 18px;background:url('../images/mcis2/con_bg_right.png') repeat-y right top;background-attachment:fixed;}
+#content:after{display:block;clear:both;content:'';}
+
+#footer			{width:100%;height:28px;position:fixed; left:0; right:0; bottom:0;text-align:right;padding-top:0px;border-top:0px;background:url('../images/mcis2/con_bg_footerleft.png') no-repeat left top;}
+
+/*-------------- UI Object --------------*/
+.logo			{float:left;width:280px;height:84px;background:url('../images/mcis2/con_bg_logo.png') no-repeat left top;}
+.footerbg	{width:170px;height:28px;background:url('../images/mcis2/con_bg_footerright.png'); float:right;}
+
+/*-------------- pagelayout --------------*/
+.pagelayout	{height:100%;padding:50px 10px 10px 10px;}
+
+.pagelayout	.left400	{float:left;width:400px;}
+.pagelayout	.right400	{margin-left:420px;}
+
+.pagelayout	.left500	{float:left;width:500px;}
+.pagelayout	.right500	{margin-left:520px;}
+
+.pagefullb	{height:100%;padding:0px 10px 10px 10px;}
+.pagefullt	{height:100%;padding:50px 10px 10px 10px;}
+
+/*-------------- topmenu --------------*/
+.topmenu	{min-width:1000px;}
+.topmenu ul li			{float:left;width:64px;height:75px;margin:10px 20px 0px 0px;text-align:center;padding-top:57px;cursor:pointer;font-family:'굴림','Gulim','굴림체','Gulimche'}
+
+.topmenu .menu1			{background:url(../images/mcis2/con_menu01_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu1:hover	{background:url(../images/mcis2/con_menu01_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu1on		{background:url(../images/mcis2/con_menu01_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu2			{background:url(../images/mcis2/con_menu02_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu2:hover	{background:url(../images/mcis2/con_menu02_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu2on		{background:url(../images/mcis2/con_menu02_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu3			{background:url(../images/mcis2/con_menu03_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu3:hover	{background:url(../images/mcis2/con_menu03_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu3on		{background:url(../images/mcis2/con_menu03_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu4			{background:url(../images/mcis2/con_menu04_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu4:hover	{background:url(../images/mcis2/con_menu04_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu4on		{background:url(../images/mcis2/con_menu04_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu5			{background:url(../images/mcis2/con_menu05_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu5:hover	{background:url(../images/mcis2/con_menu05_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu5on		{background:url(../images/mcis2/con_menu05_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu6			{background:url(../images/mcis2/con_menu06_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu6:hover	{background:url(../images/mcis2/con_menu06_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu6on		{background:url(../images/mcis2/con_menu06_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu7			{background:url(../images/mcis2/con_menu07_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu7:hover	{background:url(../images/mcis2/con_menu07_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu7on		{background:url(../images/mcis2/con_menu07_on.png) no-repeat top center;color:#FFBA1E;}
+
+.topmenu .menu8			{background:url(../images/mcis2/con_menu08_off.png) no-repeat top center;color:#fff;}
+.topmenu .menu8:hover	{background:url(../images/mcis2/con_menu08_over.png) no-repeat top center;color:#FFBA1E;}
+.topmenu .menu8on		{background:url(../images/mcis2/con_menu08_on.png) no-repeat top center;color:#FFBA1E;}
+
+/* userinfo */
+.userinfo	{float:right;color:#fff;padding:9px 20px 0px 0px;}
+
+/*-------------- search --------------*/
+.searchcon	{height:auto; left:18px; right:18px; top:84px;background:url('../images/mcis2/con_bg_search_right.png') no-repeat right top;background-color:#163F69;}
+.searchcon	ul{padding:5px 12px;background:url('../images/mcis2/con_bg_search.png') no-repeat left top;}
+.searchcon	li	{float:left;padding:1px 4px;}
+
+.searchcon	.searchBT	{widtH:95px;height:22px;display:block;overflow:visible;margin:0;padding:0;background:url('../images/mcis2/con_bt_search.png');margin-left:-10px;}
+.searchcon	.searchBT	button {widtH:95px;height:22px;background-color:transparent;border:0px;}
+.searchcon	.newwinBT	{width:87px;height:18px;background:url('../images/mcis2/con_bt_newwin.png') no-repeat;margin-left:20px;cursor:pointer;float:Right;}
+.searchcon	.newwinBT	button	{background:transparent;color:transparent;}
+.searchcon	.searchsubBT	{width:120px;height:24px;background:url('../images/mcis2/con_bt_searchsub.png') no-repeat;margin-left:20px;cursor:pointer;float:Right;color:#133160;cursor:pointer;}
+.searchcon	.searchsubBT	button	{background:transparent;color:#133160;border:0px;border-color:transparent;width:120px;height:24px;cursor:pointer;}
+
+.searchcon	.searchsubBToff	{width:120px;height:24px;background:url('../images/mcis2/con_bt_searchsuboff.png') no-repeat;margin-left:20px;cursor:pointer;float:Right;color:#133160;cursor:default;}
+.searchcon	.searchsubBToff	button	{background:transparent;color:#133160;border:0px;border-color:transparent;width:120px;height:24px;cursor:default;}
+
+/*-------------- graph box --------------*/
+.graphbox1	{margin-bottom:10px;padding:4px;border:1px solid #C5D3E2;background-color:#E2E9F0;}
+.graphbox1 .cont{padding:5px;background-color:#FFF;height:100%;}
+
+.graphbox2	{margin-bottom:10px;padding:4px;border:1px solid #D3D3D3;background-color:#E9E9E9;}
+.graphbox2 .cont{padding:5px;background-color:#FFF;}
+
+.graphbox3	{margin-bottom:10px;padding:4px;border:1px solid #D3D3D3;background-color:#E9E9E9;margin-right:2px;}
+.graphbox3 .cont{padding:0px;background-color:#FFF;}
+
+/*-------------- title style --------------*/
+.title01	{font-family:'굴림','Gulim','굴림체','Gulimche';background:url('../images/mcis2/con_bg_title01.png') no-repeat;background-position:0px 2px;color:#8A8A8A;padding:2px 15px;}
+.title01	span	{font-family:'굴림','Gulim','굴림체','Gulimche';color:#003471;}
+.title01	.bold	{font-family:'굴림','Gulim','굴림체','Gulimche';color:#3A608B;font-weight:bold;}
+
+.title02	{font-family:'굴림','Gulim','굴림체','Gulimche';background:url('../images/mcis2/con_bg_title02.png') no-repeat;background-position:0px 2px;color:#8A8A8A;padding:3px 17px;}
+.title02	span	{font-family:'굴림','Gulim','굴림체','Gulimche';color:#003471;}
+
+.title03	{font-family:'굴림','Gulim','굴림체','Gulimche';color:#666666;padding:3px;background-color:#E9E9E9;text-align:center;}
+
+/*-------------- table style --------------*/
+.table01	{}
+.table01	.thbg1		{background:url('../images/mcis2/con_table01_tbodytitle01.png') no-repeat center;color:#FFF;text-align:center;padding-right:0px;}
+.table01	.thbg2		{background:url('../images/mcis2/con_table01_tbodytitle02.png') no-repeat center;color:#666666;text-align:center;padding-right:0px;}
+.table01	.thbg3		{background:url('../images/mcis2/con_table02_tbodytitle01.png') no-repeat center;color:#FFF;text-align:center;padding-right:0px;}
+.table01	.bluetxt	{color:#5278BF;font-weight:bold;}
+.table01	.redtxt		{color:#BF5B52;font-weight:bold;}
+
+.table01	table		{width:100%;border-collapse:collapse;}
+.table01	tbody	.left	{text-align:left;padding-left:10px;}
+.table01	tbody	.center	{text-align:center;padding-right:0px;}
+.table01	thead	tr	{background:url('../images/mcis2/con_table01_theadleft.png') no-repeat;}
+.table01	thead	th	{width:12px;height:25px;background:url('../images/mcis2/con_table01_theadline.png') no-repeat right;text-align:center;color:#818181;}
+.table01	thead	td	{width:12px;background:url('../images/mcis2/con_table01_theadright.png') no-repeat right;text-align:center;color:#818181;}
+.table01	tbody	th	{height:27px;border-bottom:1px solid #9BAED8;text-align:right;padding-right:10px;color:#666666;}
+.table01	tbody	td	{height:27px;border-bottom:1px solid #D9D9D9;text-align:right;padding-right:10px;color:#666666;}
+
+/*-------------- 공통 --------------*/
+.txtright	{text-align:right;}
+.txtleft	{text-align:left;}
+.txtcenter	{text-align:center;}
+
+
+
+/*---------------------- extjs 디자인 변경 ----------------------*/
+
+
+/*-------색상 관련--------*/
+*	{
+		font-family:'현대하모니 L','Malgun Gothic';
+		font-size:12px;
+	}
+	
+.x-form-trigger-wrap-default	{border:1px solid #7B8FA2;color:#DCE2E9;background-color:#163F69;}
+
+.x-column-header	
+	{	color:#FFFFFF;
+		font-family:'현대하모니 L','Malgun Gothic';
+		font-size:12px;
+		font-weight:normal;
+		border-right-color:#63707F;
+		background-color:#8293A6;
+		border:1px #63707F solid;
+		border-collapse:collapse;
+		border-right:0px;
+		border-bottom:0px;
+	}
+.x-box-inner	{left:-1px;}
+.x-column-header-trigger
+	{	
+		background-color:#8293A6;
+	}
+.x-grid-item-focused .x-grid-cell-inner::before
+	{	
+		border:1px #EDEDED solid;
+		border-collapse:collapse;
+		color:Red;
+	}
+.x-form-text-default
+	{
+		font-family:'현대하모니 L','Malgun Gothic';
+		background-color:#163F69;
+		font-size:12px;
+		color:#DCE2E9;
+		font-weight:normal;
+	}
+	
+.x-form-trigger-default
+	{
+		background-color:transparent;
+	}
+	
+.x-column-header-inner
+	{
+		padding-right:0px;
+		padding-left:0px;
+	}
+	
+.x-column-header-over, .x-column-header-sort-ASC, .x-column-header-sort-DESC
+	{
+		background-color:#8293A6;
+		color:#FFFFFF;
+	}
+
+.x-column-header-open
+	{
+		background-color:#8293A6;
+	}
+
+.x-column-header-open .x-column-header-trigger
+	{
+		background-color:#8293A6;
+	}
+	
+.x-column-header-focus.x-column-header .x-column-header-inner::before
+	{
+		border:1px solid #8293A6;
+	}
+
+.x-form-trigger-wrap-invalid.x-form-trigger-wrap-default
+	{
+		border:1px solid #BDC7D0;
+	}
+.x-toolbar-default .x-toolbar-separator-horizontal
+	{
+		display:none;
+	}
+	
+/*.x-group-sub-header .x-column-header-inner
+	{
+		padding:10px 12px 10px 17px;
+	}*/
+
+.x-tab-bar-default-top > .x-tab-bar-body-default
+	{
+		padding-left:0px;
+	}
+
+body.x-border-layout-ct, div.x-border-layout-ct
+	{
+		background-color:#fff;
+	}
+	
+.x-panel-header-default
+	{
+		background-color:#fff;
+	}
+	
+.x-panel-default-outer-border-trl
+	{
+		border:0px;
+	}
+
+.x-docked-summary .x-grid-item, .x-docked-summary .x-grid-row-summary .x-grid-cell
+	{
+		border:1px solid #618A98;
+		background-color:#9FB9C2;
+		border-collapse:collapse;
+		margin-left:-1px;
+		margin-right:-1px;
+	}
+
+.x-grid-row-summary .x-unselectable .x-grid-cell-inner
+	{
+		background-color:#9FB9C2;
+		font-weight:bold;
+	}
+
+.x-grid3-hd 
+	{ 
+		text-align:-moz-center; /* FF */ 
+		text-align:center; /* IE */ 
+
+	}
+
+.x-column-header-focus.x-column-header
+	{
+		color:#FFFFFF;
+	}
+
+.x-panel-default-outer-border-rl
+	{
+		background-color:#8293A6;
+	}
+
+/*-------이미지 관련--------*/
+
+
+.x-column-header-trigger
+	{
+		background-image:url('../images/mcis2/hd-pop.png');
+		border-left-width:0px;
+	}
+
+.x-form-trigger-default
+	{
+		background-image:url('../images/mcis2/trigger.png');
+	}
+	
+.x-form-date-trigger
+	{
+		background-image:url('../images/mcis2/date-trigger.png');
+	}
+
+.x-column-header-sort-ASC .x-column-header-text
+	{
+		background-image:url('../images/mcis2/sort_asc.png');
+	}
+	
+.x-column-header-sort-DESC .x-column-header-text
+	{
+		background-image:url('../images/mcis2/sort_desc.png');
+	}
+
+.x-tab-inner-default
+	{
+		color:#707070;
+	}
+
+/*tab*/
+.x-tab-active.x-tab .x-tab-default-top-tl, .x-tab-active.x-tab .x-tab-default-top-bl, .x-tab-active.x-tab .x-tab-default-top-tr, .x-tab-active.x-tab .x-tab-default-top-br, .x-tab-active.x-tab .x-tab-default-top-tc, .x-tab-active.x-tab .x-tab-default-top-bc
+	{
+		background-image:url("../images/mcis2/tab-default-top-active-corners.gif");
+	}
+.x-tab-active.x-tab .x-tab-default-top-ml, .x-tab-active.x-tab .x-tab-default-top-mr
+	{
+		background-image:url("../images/mcis2/tab-default-top-active-sides.gif");
+	}
+.x-tab-active.x-tab .x-tab-default-top-mc
+	{
+		background-image:url("../images/mcis2/tab-default-top-active-fbg.gif");
+	}
+.x-tab-default-top-tl, .x-tab-default-top-bl, .x-tab-default-top-tr, .x-tab-default-top-br, .x-tab-default-top-tc, .x-tab-default-top-bc, .x-tab-default-top-ml, .x-tab-default-top-mr
+	{
+		background-image:url("../images/mcis2/tab-default-top-corners.gif");
+	}
+.x-tab-default-top-ml, .x-tab-default-top-mr
+	{
+		background-image:url("../images/mcis2/tab-default-top-sides.gif");
+	}
+.x-tab-default-top-mc
+	{
+		background-image:url("../images/mcis2/tab-default-top-fbg.gif");
+		background-color:transparent;
+	}
+.x-tab-over .x-tab-default-top-tl, .x-tab-over .x-tab-default-top-bl, .x-tab-over .x-tab-default-top-tr, .x-tab-over .x-tab-default-top-br, .x-tab-over .x-tab-default-top-tc, .x-tab-over .x-tab-default-top-bc
+	{
+		background-image:url("../images/mcis2/tab-default-top-over-corners.gif");
+	}
+.x-tab-over .x-tab-default-top-ml, .x-tab-over .x-tab-default-top-mr
+	{
+		background-image:url("../images/mcis2/tab-default-top-over-sides.gif");
+	}
+.x-tab-over .x-tab-default-top-mc
+	{
+		background-image:url("../images/mcis2/tab-default-top-over-fbg.gif");
+		color:#4E82BB;
+	}
+	
+.x-tab-bar-body-default
+	{
+		background-image:url('../images/mcis2/tab-default-top-bg.gif');
+		background-positon:0px 0px;
+		background-color:transparent;
+	}
+	
+.x-tab-bar-default
+	{
+		background-color:#ffffff;
+	}
+
+/*k1park
+.x-panel-body{
+background-color: white}
+*/
+/*-------------- My pagelayout --------------*/
+.myPagelayout	{width:100%;height:100%;padding:10px 10px 10px 10px;}
+
+.myPagelayout	.left400	{float:left;width:400px;}
+.myPagelayout	.right400	{margin-left:420px;}
+
+.myPagelayout	.left500	{float:left;width:500px;}
+.myPagelayout	.right500	{margin-left:520px;}
+
+
+/*-------------- search condition style change --------------*/
+
+.my-x-toolbar-default	{border:0px;padding:0px;border-top:1px solid #133160;background:url('../images/mcis2/con_bg_search.png') no-repeat left top #163F69;padding:3px 5px 3px 14px;}
+.my-x-toolbar-default-grey	{border:0px;padding:0px;border-top:1px solid #133160;background:url('../images/mcis2/con_bg_search.png') no-repeat left top #163F69;padding:3px 5px 3px 14px;}
+.x-toolbar-default	{border:1px;padding:0px;border-top:1px solid #133160; padding:3px 5px 3px 14px;}
+
+.x-form-cb-label-after.x-form-cb-label-default	{color:#FFF;}
+.x-form-checkbox-default	{background-image:url('../images/mcis2/checkbox.png')}
+/*{background:url('../images/mcis2/con_bg_search_right.png') no-repeat right top;background-color:#163F69;}*/
+
+/*.x-mask	{width:106px;height:20px;position:absolute;left:22px;top:2px;background-color:rgba(143,167,205,0.7);}*/
+
+.x-tip-header-title-default {font-family:'현대하모니 L','Malgun Gothic';}
+
+.x-grid-cell {
+    overflow: hidden;
+    font: normal 13px tahoma, arial, verdana, sans-serif;
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    cursor: default
+}
+
+.x-grid-cell-inner {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    padding: 3px 6px;
+    white-space: nowrap
+}
+
+.x-panel-body {
+	background-color: #FFFFFF;	
+}
+.x-toolbar-default-docked-bottom  {
+	 background-color: #F5F5F5;
+}
+.x-toolbar-text {
+	font-family:'현대하모니 L','Malgun Gothic';
+}
+
+.x-btn-inner {
+	font-family:'현대하모니 L','Malgun Gothic';
+}
+.MSExcelX {
+    background-image:url(../../extjs5/module/shared/icons/fam/MSExcelX.png) !important;
+}
+
+
+.not-matched-row{
+    background-color: #FFFFFF;
+}
+.matched-row {
+    background-color: #C1DDF1;
+}
+
+}

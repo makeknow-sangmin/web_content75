@@ -1,0 +1,18 @@
+/*
+
+Kanban TaskBoard 2.0.9
+Copyright(c) 2009-2016 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/license
+
+*/
+.sch-taskboard,
+.sch-taskboard-body {
+    background : transparent;
+}
+
+/* Selector element should appear above task elements */
+.sch-taskboard .x-view-selector {
+    z-index      : 2;
+    border-width : 2px;
+}

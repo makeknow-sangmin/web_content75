@@ -1,0 +1,25 @@
+/*-------------- Common --------------*/
+/*@font-face	{font-family:'나눔고딕','NanumGothic';src:url('../fonts/NanumGothic.eot');src:url('../fonts/NanumGothic.woff')}*/
+html,body	{height:100%;}
+body {height:100%;overflow:hidden;font-family:'맑은 고딕','Malgun Gothic';font-size:13px;}
+*	{
+		font-family:'맑은 고딕','Malgun Gothic';
+		font-size:13px;
+	}
+.main-background {
+background-image: url(http://hosu.io/web_content75/media/Beebe_Windmill.png);
+background-repeat:	no-repeat;
+background-position: 99% 99%;
+width:100%;
+height:100%;
+}
+
+.x-title-text {
+	font-size: 16px;
+	font-weight: bold;
+}
+/* .myPanelClass .x-panel-body { */
+/* 	margin:0px; */
+/* 	background:blue; */
+/* 	border: 0px; */
+/* } */

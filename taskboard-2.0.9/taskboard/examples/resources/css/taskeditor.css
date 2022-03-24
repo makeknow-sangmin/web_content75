@@ -1,0 +1,122 @@
+.taskeditor .x-panel-body {
+    background-color : #ececec;
+}
+
+body > .x-mask {
+    background-color : rgba(0, 0, 0, 0.6);
+}
+
+.taskeditor .x-form-text {
+    padding-left : 3px;
+}
+
+.taskeditor .x-field * {
+    border : 0;
+}
+
+.taskeditor .namefield input {
+    font-weight : bold;
+    font-size   : 1.25em;
+}
+
+.taskeditor .x-field:not(.comments) .x-form-field,
+.taskeditor .x-field .x-form-trigger {
+    border           : none;
+    background-color : transparent;
+    transition       : background-color 0.4s;
+    border-radius    : 3px;
+}
+
+.taskeditor .x-field-focus .x-form-field,
+.taskeditor .x-field-focus .x-form-trigger {
+    background-color : #fff !important;
+}
+
+.checklist .x-form-cb-checked label {
+    text-decoration : line-through;
+    color           : #888;
+}
+
+.taskeditor .comment-title,
+.taskeditor .x-form-item-label-text,
+.taskeditor .comment-header h4 {
+    font-weight  : bold;
+    color        : #666;
+}
+
+.taskeditor .comment-title,
+.taskeditor .x-form-item-label-text {
+    padding-left : 3px;
+}
+
+
+.taskeditor .comment-title {
+    margin : 15px 0 5px 0;
+}
+
+.taskeditor .x-tool * {
+    color : #666;
+}
+
+.taskeditor .x-tool:focus * {
+    color : #000;
+}
+
+.taskeditor .cancel-add .x-tool-img {
+    margin    : 3px 0px;
+    font-size : 26px;
+    height    : 25px;
+    width     : 40px;
+}
+
+.x-ie8 .x-form-text-default {
+    min-height : 30px;
+}
+
+/* COMMENT VIEW */
+.commentview {
+    padding : 4px;
+}
+
+.comment-wrap {
+    float         : left;
+    width         : 100%;
+    margin-bottom : 15px;
+}
+
+.comment-wrap img {
+    width         : 22px;
+    border-radius : 3px;
+    margin-left   : 1px;
+}
+
+.comment-wrap h4 {
+    display : inline-block;
+    padding : 0;
+    margin  : 0 0 3px 0;
+}
+
+.comment-wrap p,
+.comment-wrap span {
+    padding-top : 0;
+    margin      : 0 0 0 10px;
+}
+
+.comment-wrap p {
+    background    : rgba(255, 255, 255, 0.7);
+    border-radius : 4px;
+    padding       : 5px;
+    width         : 90%;
+}
+
+.comment-wrap .date {
+    color     : #999;
+    font-size : 90%;
+}
+
+.comment-body img,
+.comment-body p {
+    float : left;
+}
+
+/* EOF COMMENT VIEW*/

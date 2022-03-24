@@ -1,0 +1,16 @@
+[{"display": "수주금액", "value": "selling_price", "iconCls": "active", "type": "quarter"},
+{"display": "예상인건비", "value": "human_plan", "iconCls": "active", "type": "quarter"},
+{"display": "예상재료비", "value": "purchase_plan", "iconCls": "active", "type": "quarter"},
+{"display": "재료비 실적", "value": "purchase_cost", "iconCls": "active", "type": "quarter"},
+{"display": "잔여 재료비", "value": "left_cost", "iconCls": "active", "type": "quarter"},
+{"display": "인건비 실적", "value": "human_cost", "iconCls": "active", "type": "quarter"},
+{"display": "관리비", "value": "reserved_doublec", "iconCls": "active", "type": "quarter"},
+{"display": "예상이익", "value": "profit_plan", "iconCls": "active", "type": "quarter"},
+{"display": "현재이익", "value": "profit_result", "iconCls": "active", "type": "quarter"},
+{"display": "예상이익률", "value": "profit_plan_ratio", "iconCls": "active", "type": "quarter"},
+{"display": "현재이익률", "value": "profit_result_ratio", "iconCls": "active", "type": "quarter"},
+
+{"display": "고객 수주","value":"P", "type": "region", "iconCls": "active"},
+{"display": "연구개발", "value": "R", "type": "region", "iconCls": "active"},
+{"display": "영업 가수주", "value": "S", "type": "region", "iconCls": "active"}
+]

@@ -1,0 +1,3 @@
+curpath menu location.reload(); 로 변경
+수금계획 작성중
+수주현황 고객사 -> 발주사

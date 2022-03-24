@@ -1,0 +1,52 @@
+{
+    "text": ".",
+    "children": [
+        {
+            "task": "P061: VBMM02",
+            "duration": 13.25,
+            "user": "이호상",
+            "iconCls": "task-folder",
+            "children": [
+                {
+                    "task": "A001: Assy unit",
+                    "duration": 1.25,
+                    "user": "이호상",
+                    "leaf": true,
+                    "iconCls": "task"
+                }, {
+                    "task": "A002: 메인파트",
+                    "duration": 12,
+                    "user": "이호상",
+                    "leaf": true,
+                    "iconCls": "task"
+                    }
+                 ]
+        }, {
+            "task": "P07: Val-T07",
+            "duration": 2,
+            "user": "장민수",
+            "iconCls": "task-folder",
+            "children": [
+                {
+                    "task": "A001: Shaft",
+                    "duration": 0.75,
+                    "user": "이호상",
+                    "leaf": true,
+                    "iconCls": "task"
+                }, {
+                    "task": "A002: Plate",
+                    "duration": 3.75,
+                    "user": "구성모",
+                    "leaf": true,
+                    "iconCls": "task"
+                }, {
+                    "task": "A003: Bar",
+                    "duration": 0.5,
+                    "user": "오영재",
+                    "leaf": true,
+                    "iconCls": "task"
+                }
+            ]
+        }
+    ]
+}

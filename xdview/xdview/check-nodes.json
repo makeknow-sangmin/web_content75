@@ -1,0 +1,65 @@
+[{
+    "text": "연구개발본부", 
+    "cls": "folder",
+    "expanded": false,
+    "checked": false,
+    "children": [{
+        "text": "시작개발팀",
+        "leaf": true,
+        "checked": true
+    },{
+        "text": "멀티시험개발팀",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "해석연구팀",
+        "leaf": true,
+        "checked": false
+    }]
+},{
+    "text": "생산개발센터",
+    "cls": "folder",
+    "checked": false,
+    "children": [{
+        "text": "제어팀",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "Milk",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "기구팀",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "제작팀",
+        "cls": "folder",
+        "children": [{
+            "text": "1팀",
+            "leaf": true,
+            "checked": false
+        },{
+            "text": "2팀",
+            "leaf": true,
+            "checked": false
+        }]
+    }]
+},{
+    "text": "품질본부", 
+    "cls": "folder",
+    "checked": false,
+    "children": [{
+        "text": "완료검사",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "TQC",
+        "leaf": true,
+        "checked": false
+    },{
+        "text": "지원팀",
+        "leaf": true,
+        "checked": false
+    }]
+}]

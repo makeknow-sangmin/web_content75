@@ -1,0 +1,851 @@
+A {color: #00009C; font-size: 12}
+A:link    { color: #00009C; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:visited { color: #00009C; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:active  { color: #00009C; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:hover	  { background:#FFEECE;  color: mediumvioletred; border-bottom: none}
+
+td	      { font-family:"맑은 고딕, tahoma"; font-size:12px; color:#333333; line-height:18px;}
+.title 	  { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#000000; line-height:18px;}
+.text	  { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#333333;}
+.textarea { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#333333;}
+.password { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#333333;}
+.file	  { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#333333;}
+.select	  { font-family:"맑은 고딕, tahoma"; font-size:12pt; color:#333333;}
+.txt     { background-color:#F5EBFF; }
+.outline { background-color:#CCCCCC; }
+.inline  { background-color:#CCCCCC; }
+.blank   { background-color:#FFFFFF; }
+.whitefont   { color:#EAEAEA; }
+table.border { border-bottom: #3d3d3d 0px solid;
+				border-left: #3d3d3d 0px solid;
+				border-right: #3d3d3d 0px solid;
+				border-top: #3d3d3d 0px solid;
+			  }
+body, th, select {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12;
+	background: #fff;
+	color: #000;
+}
+
+input {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11;
+}
+
+code, pre {
+	font-family: 'Andale Mono', Courier, monospace;
+}
+
+div.subject {
+	font-weight: bold;
+}
+
+div.body {
+	color: green;
+}
+
+hr {
+	color: grey;
+}
+.light_input{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 1px solid;
+	border-left: #D8CC85 1px solid;
+	border-right: #D8CC85 1px solid;
+	border-top: #D8CC85 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	height: 20;
+}
+
+.light_input_bold{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+}
+
+.light_input_bold_right{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+	text-align: right;
+}
+
+.light_input_bold_center{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+	text-align: center;
+}
+
+.light_input_login_com{
+	background-color: #FCFCFB;
+	border-bottom: #7F9DB9 1px solid;
+	border-left: #7F9DB9 1px solid;
+	border-right: #7F9DB9 1px solid;
+	border-top: #7F9DB9 1px solid;
+	padding-top: 2px;padding-left: 2px;padding-right: 2px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	background:#FFFFDD;
+	height: 20;
+}
+
+.light_input_login{
+	background-color: #FCFCFB;
+	border-bottom: #7F9DB9 1px solid;
+	border-left: #7F9DB9 1px solid;
+	border-right: #7F9DB9 1px solid;
+	border-top: #7F9DB9 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	height: 20;
+}
+
+.light_input_noheight{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 1px solid;
+	border-left: #D8CC85 1px solid;
+	border-right: #D8CC85 1px solid;
+	border-top: #D8CC85 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+}
+
+
+.light_input_right{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 1px solid;
+	border-left: #D8CC85 1px solid;
+	border-right: #D8CC85 1px solid;
+	border-top: #D8CC85 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	text-align: right;
+	height: 20;
+}
+.light_input_center{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 1px solid;
+	border-left: #D8CC85 1px solid;
+	border-right: #D8CC85 1px solid;
+	border-top: #D8CC85 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	text-align: center;
+	height: 20;
+}
+.light_input_center_bold{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 1px solid;
+	border-left: #D8CC85 1px solid;
+	border-right: #D8CC85 1px solid;
+	border-top: #D8CC85 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.wacode_center_bold{
+	background-color: #FFFFFF;
+	border-bottom: #D8CC85 2px solid;
+	border-left: #D8CC85 2px solid;
+	border-right: #D8CC85 2px solid;
+	border-top: #D8CC85 2px solid;
+	padding-top: 4px;padding-left: 2px;padding-right: 2px;padding-bottom: 4px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	height:28;
+}
+
+.light_input_readonly{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	height: 20;
+}
+
+.light_input_readonly_noheight{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+}
+
+.light_input_readonly_center{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	text-align: center;
+	height: 20;
+}
+
+.light_input_readonly_right{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	color: #000000;
+	text-align: right;
+}
+
+
+.text_area{
+	background-color: #FFFFFF;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+}
+
+.light_input_readonly_white{
+	background-color: #FFFFFF;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+}
+
+.big_input_readonly_white{
+	background-color: #FFFFFF;
+	border-bottom: #999999 0px solid;
+	border-left: #999999 0px solid;
+	border-right: #999999 0px solid;
+	border-top: #999999 0px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 11pt;
+	color: #000000;
+}
+.path_msg{
+	font-size: 8pt;
+	color: #EAEAEA;
+	background: #eeeeee;
+	font-weight: bold;
+}
+.mid_menu_class{
+	font-size: 9pt;
+/*
+	font-weight: bold;
+	color: #EAEAEA;
+*/
+
+	color: #EAEAEA;
+	background: #BDCDFF;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+.sub_menu_class{
+	font-size: 9pt;
+	color: #999999;
+	background: #EFEFEF;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+
+.general_msg{
+	font-size: 8pt;
+	color: #163975; 
+	font-family:"맑은 고딕, tahoma";
+}
+
+.header_msg{
+	font-size: 14pt;
+	color: #163975; 
+	font-family:"맑은 고딕, tahoma";
+	letter-spacing: 1.8pt;
+}
+.product_msg{
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 3px solid;
+	border-right: #DDDDDD 3px solid;
+	border-top: #DDDDDD 2px solid;
+	background: #DDDDDD;
+	font-size: 10pt;
+	color: purple;
+	font-family: "Lucida Sans Typewriter";
+}
+.ver_msg{
+	font-size: 8pt;
+	color: #EAEAEA;
+	font-family: "arial";
+}
+
+.sigma_token{
+	font-size: 7pt;
+	color: #101010;
+	font-family: "arial";
+}
+.movingline{
+	border-width: 0 0 0 0;
+	overflow: hidden;
+	font-size: 1pt;
+}
+.main_menu{
+	border-bottom: #DDDDDD 0px solid;
+	border-left: #DDDDDD 0px solid;
+	border-right: #DDDDDD 0px solid;
+	border-top: #DDDDDD 0px solid;
+	color: #EAEAEA;
+}
+
+.main_menu_gap{
+	font-size: 5pt;
+	color: orange;
+}
+
+.main_msg{
+	color: #BBBBBB;
+}
+
+.logout{
+	background: #F4F4F4;
+}
+.myinfo{
+	color: orange;
+}
+.info_span1{
+	text-align: left;
+	background: #DBE3F1;
+	vertical-align: middle;
+}
+.info_span2{
+	border-bottom: purple 0px solid;
+	border-left: purple 0px solid;
+	border-right: purple 0px solid;
+	border-top: purple 0px solid;
+	text-align: left;
+	background: #F9FFF9;
+}
+.info_span3{
+	text-align: center;
+	background: #DBE3F1;
+	vertical-align: middle;
+	font-weight: bold;
+}
+div#nifty{
+	background: #F4F4F4;
+	margin-bottom: 20px;
+}
+
+.top_page{
+	font-size: 15pt;
+	text-align: center;
+	background: #DBE3F1;
+	vertical-align: middle;
+	font-weight: bold;
+	font-family:"맑은 고딕, tahoma";
+}
+
+div#div00{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #333333;
+}
+
+div#div01{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div02{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div03{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div04{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div05{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+div#div06{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+div#div07{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+div#div08{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+div#div09{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div10{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div11{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div12{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div13{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div14{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div15{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#div16{
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.jangbiman_info{
+	font-size: 14pt;
+	color: #163975; 
+	font-family: "Lucida Sans Typewriter";
+}
+
+.title_span{
+	border-bottom: #7AA5D6 1px dotted;
+	border-left: #7AA5D6 1px solid;
+	border-right: #7AA5D6 1px solid;
+	border-top: #7AA5D6 1px solid;
+	
+	background: #E5ECF9;
+	font-size: 12pt;
+	color: #3366CC; 
+	font-family: "Tahoma";
+	font-weight: bold;
+}
+.notice_top_span{
+	border-bottom: #BEBA18 1px solid;
+	border-left: #BEBA18 1px solid;
+	border-right: #BEBA18 1px solid;
+	border-top: #BEBA18 1px solid;
+	
+	background: #BEBA18;
+	font-size: 10pt;
+	color: white; 
+	font-family: "Tahoma";
+	font-weight: bold;
+}
+.notice_span{
+	border-bottom: #7AA5D6 0px solid; 
+	border-left: #7AA5D6 0px solid; 
+	border-right: #7AA5D6 0px solid; 
+	border-top: #7AA5D6 0px solid;
+	
+	background: #EAEAEA;
+	font-size: 10pt;
+	color: #444444; 
+	font-family: "Tahoma";
+}
+
+.title_gap{
+	border-bottom: #7AA5D6 0px solid;
+	border-left: #7AA5D6 0px solid;
+	border-right: #7AA5D6 0px solid;
+	border-top: #7AA5D6 0px solid;
+}
+.title_gap_under{
+	border-bottom: #7AA5D6 2px solid;
+	border-left: #7AA5D6 0px solid;
+	border-right: #7AA5D6 0px dotted;
+	border-top: #7AA5D6 0px solid;
+}
+
+.info_page{
+	border-bottom: #7AA5D6 0px solid;
+	border-left: #7AA5D6 0px solid;
+	border-right: #7AA5D6 0px solid;
+	border-top: #7AA5D6 0px solid;
+}
+
+.service_info_bubble1{
+	background-color: #FFFECB;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin:10px;
+}
+.service_info_bubble2{
+	background-color: #FFCC97;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin:10px;
+}
+
+.service_info_box{
+	background-color: #E8D1FF;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+.service_info_box1{
+	background-color: #FFFECB;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+.service_proc_box{
+	background-color: #E8D1FF;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.service_proc_box1{
+	background-color: #FFFECB;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	color: #000000;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	width: 350px;
+	height: 65px;
+	text-align: left;
+	vertical-align: middle;
+}
+.blink_txt {
+	font-family: "��ü";
+	font-size: 15pt;
+}
+
+.page_clicked_box{
+	background-color: #FFCCCC;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 7pt;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	width: 18px;
+	
+}
+.page_unclicked_box{
+	background-color: #DBE3F1;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 7pt;
+	color: #000000;
+	text-align: center;
+	width: 18px;
+}
+.page_unclicked_box_next{
+
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	font-weight: bold;
+	width: 40px;
+}
+.highlight_green{
+	font-family:"맑은 고딕, tahoma";
+	font-size: 8pt;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	background-color: #CCFFCC;
+	color:#333333;
+}
+.highlight_white{
+	font-family:"맑은 고딕, tahoma";
+	border-bottom: white 2px solid;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	text-align: center;
+	background-color: white;
+}
+.tight_pading {
+	padding-right: 0px; 
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	}
+.highlight_input{
+	background-color: #EAEAEA;
+	border-bottom: #55A5D8 2px solid;
+	border-left: #55A5D8 2px solid;
+	border-right: #55A5D8 2px solid;
+	border-top: #55A5D8 2px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	}
+	
+div#float_menu{
+	border-bottom: #888888 1px solid;
+	border-left: #888888 1px solid;
+	border-right: #888888 1px solid;
+	border-top: #888888 1px solid;
+	margin-bottom: 10px;
+	text-align: left;
+	color: #555555;
+	background: #FFFFFF;
+	}
+.sub_box{
+	padding-top:10px;
+	background:#F3F3F3;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	}

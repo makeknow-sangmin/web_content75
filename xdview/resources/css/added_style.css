@@ -1,0 +1,30 @@
+/*서브*/
+#nav ul li ul{display:block;background:none;border:none; position:absolute;margin-left:8px;}
+#nav ul li ul li a{display:block;width:80px;height:16px;background:#FFF;text-indent:0;text-align:center;padding:7px 0;margin-left:10px;}
+
+.table_a tr.bg01{background-color:#D8E7EF;}/*table td bg*/
+.selectedRow {background-color: #F9EDA5;}
+/********************************
+ * ValidateTips
+ ********************************/
+.validateTips{ 
+	clear:both;border:0;padding:0;margin:5px 0 15px 10px;border-collapse:collapse;
+	z-index:1050;top:0px;left:0px;position: absolute;
+}
+
+.tips_info, .tips_success, .tips_warning, .tips_error {
+    border: 1px solid;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;-moz-border-radius:.5em;
+	-webkit-border-radius:.5em;
+	border-radius:.5em;
+}
+.tips_info { color: #00529B; background-color: #BDE5F8; background-image: url(/images/icons/info.png); }
+.tips_success { color: #4F8A10; background-color: #DFF2BF; background-image:url(/images/icons/success.png); }
+.tips_warning { color: #9F6000; background-color: #FEEFB3; background-image: url(/images/icons/warning.png); }
+.tips_error { color: #D8000C; background-color: #FFBABA; background-image: url(/images/icons/error.png); }
+.field_info { background-color: #BDE5F8; }
+.field_success { background-color: #DFF2BF; }
+.field_warning { background-color: #FEEFB3; }
+.field_error { background-color: #FFBABA; }

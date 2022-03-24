@@ -1,0 +1,92 @@
+﻿/* @font-face { */
+/*   font-family: 'FontAwesome'; */
+/*   src: url('../font/fonts/fontawesome-webfont.eot?v=4.2.0'); */
+/*   src: url('../font/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), */
+/*            url('../font/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), */
+/*            url('../font/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), */
+/*            url('../font/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/* } */
+
+.af-calendar { background-image:url(../../shared/icons/font-awesome16/calendar.png) !important; }
+.af-save { background-image:url(../../shared/icons/font-awesome16/save.png) !important; }
+.af-plus { background-image:url(../../shared/icons/font-awesome16/fa-plus_14_0_5395c4.png) !important; }
+.af-plus-circle { background-image:url(../../shared/icons/font-awesome16/fa-plus-circle_14_0_5395c4.png) !important; }
+.af-edit { background-image:url(../../shared/icons/font-awesome16/fa-edit_14_0_5395c4.png) !important; }
+.af-remove { background-image:url(../../shared/icons/font-awesome16/remove_BA4459.png) !important; }
+.af-file-excel-o { background-image:url(../../shared/icons/font-awesome16/file-excel-o.png) !important; }
+.af-download { background-image:url(../../shared/icons/font-awesome16/download.png) !important; }
+.af-copy { background-image:url(../../shared/icons/font-awesome16/fa-copy_14_0_5395c4.png) !important; }
+.af-external-link { background-image:url(../../shared/icons/font-awesome16/external-link.png) !important; }
+.af-list-ul { background-image:url(../../shared/icons/font-awesome16/list-ul.png) !important; }
+.af-list-alt { background-image:url(../../shared/icons/font-awesome16/list-alt.png) !important; }
+.af-columns { background-image:url(../../shared/icons/font-awesome16/columns.png) !important; }
+.af-search { background-image:url(../../shared/icons/font-awesome16/fa-search_14_0_5395c4.png) !important; }
+.af-search-plus { background-image:url(../../shared/icons/font-awesome16/fa-search-plus_14_0_5395c4.png) !important; }
+.af-upload-white { background-image:url(../../shared/icons/font-awesome16/upload.png) !important; }
+.af-upload { background-image:url(../../shared/icons/font-awesome16/fa-upload_12_0_ffffff_none.png) !important; }
+.af-rotate-left { background-image:url(../../shared/icons/font-awesome16/rotate-left.png) !important; }
+.af-play { background-image:url(../../shared/icons/font-awesome16/play.png) !important; }
+.af-pdf { background-image:url(../../shared/icons/font-awesome16/fa-pdf_14_0_5395c4.png) !important;}
+.af-reject { background-image:url(../../shared/icons/font-awesome16/fa-reject_14_0_fc0202.png) !important;}
+.af-check { background-image:url(../../shared/icons/font-awesome16/fa_4-7-0_check_14_0_5395c4_none.png) !important;}
+.af-refresh { background-image:url(../../shared/icons/font-awesome16/refresh.png) !important;}
+.af-dollar { background-image:url(../../shared/icons/font-awesome16/usd.png) !important;}
+.af-pause { background-image:url(../../shared/icons/font-awesome16/pause.png) !important;}
+.af-chevron-circle-right  { background-image:url(../../shared/icons/font-awesome16/chevron-circle-right.png) !important;}
+.af-exchange { background-image:url(../../shared/icons/font-awesome16/exchange.png) !important;}
+.af-lock { background-image:url(../../shared/icons/font-awesome16/lock.png) !important;}
+
+.af-arrow-left { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_arrow-left_16_0_5395c4_none.png) !important; }
+.af-arrow-right { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_arrow-right_16_0_5395c4_none.png) !important; }
+
+
+.fa-sort-alpha-asc_14_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/fa-sort-alpha-asc_14_0_5395c4_none.png) !important; }
+.fa-sort-alpha-asc  { background-image:url(../../shared/icons/font-awesome16/fa-sort-alpha-asc.png) !important; }
+
+.fa-history_14_0_555395c4  { background-image:url(../../shared/icons/font-awesome16/fa-history_14_0_555395c4.png) !important; }
+.font-awesome_4-7-0_th-list_14_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_th-list_14_0_5395c4_none.png) !important; }
+.font-awesome_4-7-0_arrow-down_14_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_arrow-down_14_0_5395c4_none.png) !important; }
+.ban  { background-image:url(../../shared/icons/font-awesome16/ban.png) !important; }
+
+.font-awesome_4-7-0_dollar_14_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_dollar_14_0_5395c4_none.png) !important; }
+.font-awesome_4-7-0_refresh_14_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_refresh_14_0_5395c4_none.png) !important; }
+.font-awesome_4-7-0_gears_14_0_8e44ad_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_gears_14_0_8e44ad_none.png) !important; }
+.font-awesome_4-7-0_gears_16_0_5395c4_none  { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_gears_16_0_5395c4_none.png) !important; }
+.ionicons_2-0-1_android-done-all_16_0_c0392b_none  { background-image:url(../../shared/icons/font-awesome16/ionicons_2-0-1_android-done-all_16_0_c0392b_none.png) !important; }
+
+
+
+.fa-sort-alpha-desc_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-sort-alpha-desc_14_0_5395c4_none.png) !important; }
+.fa-calculator_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-calculator_14_0_5395c4_none.png) !important; }
+.fa-save_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-save_14_0_5395c4_none.png ) !important; }
+.fa-typcn-th-list-outline_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/typcn-th-list-outline_14_0_5395c4_none.png) !important; }
+.fa-bitbucket_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-bitbucket_14_0_5395c4_none.png) !important; }
+.mfglabs-step_forward_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/mfglabs-step_forward_14_0_5395c4_none.png) !important; }
+.fa-retweet_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-retweet_14_0_5395c4_none.png) !important; }
+.mfglabs-retweet_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/mfglabs-retweet_14_0_5395c4_none.png) !important; }
+.fa-subscript_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-subscript_14_0_5395c4_none.png) !important; }
+
+.fa-upload_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-upload_14_0_5395c4_none.png) !important; }
+
+.fa-cart-arrow-down_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa-cart-arrow-down_14_0_5395c4_none.png) !important; }
+.fa_4-7-0_paste_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/fa_4-7-0_paste_14_0_5395c4_none.png) !important; }
+.link { background-image:url(../../shared/icons/font-awesome16/link.png) !important; }
+
+.barcode { background-image:url(../../shared/icons/font-awesome16/barcode.png) !important; }
+
+.af-excel { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_file-excel-o_16_0_5395c4_none.png) !important; }
+
+.font-awesome_4-7-0_sign-out_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_sign-out_14_0_5395c4_none.png) !important; }
+.font-awesome_4-7-0_sign-in_14_0_5395c4_none { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_sign-in_14_0_5395c4_none.png) !important; }
+.font-awesome_4-7-0_sort-alpha-desc_14_0_f39c12_none { background-image:url(../../shared/icons/font-awesome16/font-awesome_4-7-0_sort-alpha-desc_14_0_f39c12_none.png) !important; }
+.fa_4-7-0_cubes_16_0_094c80_none { background-image:url(../../shared/icons/font-awesome16/fa_4-7-0_cubes_16_0_094c80_none.png) !important; }
+.af-print { background-image:url(../../shared/icons/font-awesome16/print.png) !important; }
+
+/*크롬만*/
+.af-remove-red {
+background-color: #DE5347;
+-webkit-mask:  url(../../shared/icons/font-awesome16/remove.png) no-repeat  50% 50%;
+mask: url(../../shared/icons/font-awesome16/remove.png) no-repeat 50% 50%;
+}

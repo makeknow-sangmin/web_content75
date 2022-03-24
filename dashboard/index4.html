@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>DABP 실시간 생산현황</title>
+		<meta name="description" content="Sticky Table Headers Revisited: Creating functional and flexible sticky table headers" />
+		<meta name="keywords" content="Sticky Table Headers Revisited" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script src="/jquery/jquery-1.11.3.min.js"></script>
+		<script src="semantic/semantic.min.js"></script>
+		
+		<script> 
+		
+		var isFull = false;
+
+		function startFS() {
+			var element = document.documentElement;
+				if(element.requestFullScreen) {
+					console.log('requestFullScreen');
+					element.requestFullScreen();
+
+				} else if(element.webkitRequestFullScreen ) {
+					console.log('webkitRequestFullScreen');
+					element.webkitRequestFullScreen();
+
+				} else if(element.mozRequestFullScreen) {
+					console.log('mozRequestFullScreen');
+					element.mozRequestFullScreen();
+
+				} else if (element.msRequestFullscreen) {
+					console.log('msRequestFullscreen');
+					element.msRequestFullscreen(); // IE
+
+				} else {
+					console.log('fail full screen');
+				}
+				
+				 isFull = true;
+
+			}
+
+
+		function exitFS() {		
+			var element = document.documentElement;
+
+				if (element.exitFullscreen){
+
+					element.exitFullscreen();
+
+				}else if(element.cancelFullScreen) {
+
+					element.cancelFullScreen();
+
+				} else if(element.webkitCancelFullScreen ) {
+
+					element.webkitCancelFullScreen();
+
+				} else if(element.mozCancelFullScreen) {
+
+					element.mozCancelFullScreen();
+
+				} else if (element.msExitFullscreen) {
+
+		                element.msExitFullscreen(); // IE        
+
+				} else {
+					console.log('fail exit screen');
+				}
+				
+				isFull = false;
+
+
+			}
+		
+		
+		$(function(){
+            // hide the div on page load and use a slidedown effect
+            $('div.container').fadeOut(0, function(){
+                $(this).slideDown(1000);
+            });
+        });
+		</script>
+		
+		
+	</head>
+	<body>
+		<div class="container" >
+			<!-- Top Navigation -->
+			
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="javascript:window.history.back();"><span>이전 페이지</span></a>
+				<span class="right">
+				
+				<a class="codrops-icon codrops-icon-drop" href="javascript:startFS();"><span>FULL SCREEN</span></a>
+				<a class="codrops-icon codrops-icon-drop" href="/"><span>메인 페이지</span></a>
+				
+				</span>
+			</div>
+						 
+
+			<header>
+				<h1>설비별 <em>생산현황</em> <span class='clock'>2017-05-26 13:50:10</span></h1>	
+			</header>
+
+			<div class="component">
+<div class="grey ui buttons">
+  <button class="ui button">공정별</button>
+  <button class="ui button active">설비별</button>
+  <button class="ui button">고객사</button>
+</div>
+				<table class="overflow-y">
+					<thead>
+						<tr>
+							<th>설비</th><th>일 CAPA수량</th><th>일 계획수량</th><th>현 CAPA수량</th><th>현 계획수량</th><th>생산수량</th><th>CAPA 달성률(%)</th><th>계획 달성률(%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="height: 60px;">
+							<th class="red_lamp">설비 #1</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #2</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #3</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #4</th><td>10</td><td class="err">Parse error</td><td>2</td><td>67</td><td>83</td><td>81</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #5</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #6</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #7</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #8</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #9</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #10</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="red_lamp">설비 #11</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="red_lamp">설비 #12</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="red_lamp">설비 #13</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #14</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #15</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="green_lamp">설비 #16</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr><tr style="height: 60px;">
+							<th class="red_lamp">설비 #17</th><td>23</td><td>88</td><td>8</td><td>2</td><td>67</td><td>83</td><td>81</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- /container -->
+		<!-- 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+
+		<script src="js/jquery.stickyheader.js"></script>
+		 
+	</body>
+</html>

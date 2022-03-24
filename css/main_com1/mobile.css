@@ -1,0 +1,442 @@
+A {color: #143434; font-size: 15px}
+A:link    { color: #143434; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:visited { color: #143434; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:active  { color: 	; font-family:"맑은 고딕, tahoma"; text-decoration:none;}
+A:hover	  { background:#FFEECE;  color: mediumvioletred; border-bottom: none}
+
+.main_menu_class{
+	font-size: 15px;
+	color: #F0F0F0; 
+	background: #3EAC0F;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+}
+.mid_menu_class{
+	font-size: 15px;
+	color: #F0F0F0; 
+	background: #6DD588;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+}
+.sub_menu_class{
+	font-size: 15px;
+	color: #999999;
+	background: #EAEAEA;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+}
+.mid_menu_class_selected{
+	font-size: 15px;
+	color: #F0F0F0; 
+	background: #6B9487;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+}
+.sub_menu_class_selected{
+	font-size: 15px;
+	color: #999999;
+	background: #6B9487;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: #999999 1px solid;
+	border-left: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+}
+
+
+.table_title{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	height: 23;
+	}
+.table_title_noheight{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	}
+	
+.table_title1{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid; 
+	height: 23;
+	}
+
+.table_title_nobold{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	height: 23;
+	}
+.table_title_nowidth{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid; 
+	height: 23;
+	}
+.table_title_left{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	height: 23;
+	}
+
+.table_title_left_bold{
+	font-size: 15px; 
+	font-weight:bold;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	height: 23;
+	}
+.table_title_top{
+	font-size: 15px; 
+	font-weight:normal;
+	color: white;
+	background-color:#69B7A3;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: #EAEAEA 1px solid;
+	border-left: #EAEAEA 1px solid;
+	border-right: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+	}
+
+.light_input_top{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px dotted;
+	border-left: #91D885 0px solid;
+	border-right: #91D885 0px solid;
+	border-top: #91D885 0px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+}
+.light_input_readonly_top{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+}
+
+.light_input{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px solid;
+	border-left: #91D885 1px solid;
+	border-right: #91D885 1px solid;
+	border-top: #91D885 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	height: 20;
+}
+
+.light_input_bold{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+}
+
+.light_input_bold_right{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+	text-align: right;
+}
+
+.light_input_bold_center{
+	background-color: #FFFFFF;
+	border-bottom: orange 2px solid;
+	border-left: orange 2px solid;
+	border-right: orange 2px solid;
+	border-top: orange 2px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	height: 25;
+	text-align: center;
+}
+
+.light_input_login_com{
+	background-color: #FCFCFB;
+	border-bottom: #7F9DB9 1px solid;
+	border-left: #7F9DB9 1px solid;
+	border-right: #7F9DB9 1px solid;
+	border-top: #7F9DB9 1px solid;
+	padding-top: 2px;padding-left: 2px;padding-right: 2px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	background:#FFFFDD;
+	height: 20;
+}
+
+.light_input_login{
+	background-color: #FCFCFB;
+	border-bottom: #7F9DB9 1px solid;
+	border-left: #7F9DB9 1px solid;
+	border-right: #7F9DB9 1px solid;
+	border-top: #7F9DB9 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	height: 20;
+}
+
+.light_input_noheight{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px solid;
+	border-left: #91D885 1px solid;
+	border-right: #91D885 1px solid;
+	border-top: #91D885 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+}
+
+
+.light_input_right{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px solid;
+	border-left: #91D885 1px solid;
+	border-right: #91D885 1px solid;
+	border-top: #91D885 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: right;
+	height: 20;
+}
+.light_input_center{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px solid;
+	border-left: #91D885 1px solid;
+	border-right: #91D885 1px solid;
+	border-top: #91D885 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	height: 20;
+}
+.light_input_center_bold{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 1px solid;
+	border-left: #91D885 1px solid;
+	border-right: #91D885 1px solid;
+	border-top: #91D885 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.wacode_center_bold{
+	background-color: #FFFFFF;
+	border-bottom: #91D885 2px solid;
+	border-left: #91D885 2px solid;
+	border-right: #91D885 2px solid;
+	border-top: #91D885 2px solid;
+	padding-top: 4px;padding-left: 2px;padding-right: 2px;padding-bottom: 4px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	height:28;
+}
+
+.light_input_readonly{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	height: 20;
+}
+
+.light_input_readonly_noheight{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+}
+
+.light_input_readonly_center{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	height: 20;
+}
+
+.light_input_readonly_right{
+	background-color: beige;
+	border-bottom: #DDDDDD 1px solid;
+	border-left: #DDDDDD 1px solid;
+	border-right: #DDDDDD 1px solid;
+	border-top: #DDDDDD 1px solid;
+	padding-top: 2px;padding-left: 3px;padding-right: 3px;padding-bottom: 1px;
+	font-family:"맑은 고딕, tahoma";
+	font-size: 15px;
+	color: #000000;
+	text-align: right;
+}
+
+
+.general_msg{
+	font-size: 15px;
+	color: #333200; 
+	font-family:"맑은 고딕, tahoma";
+}
+
+.header_msg{
+	font-size: 14pt;
+	color: #333200; 
+	font-family:"맑은 고딕, tahoma";
+	letter-spacing: 1.8pt;
+}
+
+.jangbiman_info{
+	font-size: 14pt;
+	color: #333200; 
+	font-family: "Lucida Sans Typewriter";
+}
+
+.main_button {
+/*		border-bottom: #AAAAAA 1px solid;*/
+/*		border-left: #FFFFFF 1px solid;*/
+/*		border-right: #AAAAAA 1px solid;*/
+/*		border-top: #FFFFFF 1px solid;*/
+/*		padding-top: 2px;*/
+/*		padding-left: 0px;*/
+/*		padding-right: 0px;*/
+/*		padding-bottom: 0px;*/
+		font-size:10pt;
+/*		text-align: center;*/
+/*		vertical-align: middle;*/
+/*		background: #EEEEEE;*/
+		font-weight:bold;
+		color:#145C26;
+	}

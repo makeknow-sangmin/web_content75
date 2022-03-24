@@ -1,0 +1,63 @@
+{
+    "children": [
+        {
+            "title": "게시판",
+            "duration": 13.25,
+            "class_name": "Rfx.view.criterionInfo.BoardView",
+            "text": "BoardView",
+            "expanded": true,
+            "iconCls": "fa fa-bus",
+            "children": [
+                {
+                    "text": "items",
+                    "expanded": true,
+                    "children": [
+                        {
+                            "title": "Pipe supplies",
+                            "duration": 0.25,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "grid1"
+                        }, {
+                            "title": "Groceries",
+                            "duration": .4,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "grid2",
+                            "done": true
+                        }, {
+                            "title": "Cleaning supplies",
+                            "duration": .4,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "popup1"
+                        }, {
+                            "title": "Office supplies",
+                            "duration": .2,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "panel"
+                        }
+                    ]
+                }, {
+                    "text": "dockedItems",
+                    "expanded": true,
+                    "children": [
+                        {
+                            "duration": 6.5,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "command_toolbar1"
+                        }, {
+                            "duration": 2.75,
+                            "class_name": "Rfx.",
+                            "leaf": true,
+                            "text": "search_toolbar1",
+                            "done": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

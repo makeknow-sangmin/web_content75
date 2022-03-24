@@ -1,0 +1,80 @@
+{
+    "name"   : "Task Board",
+    "licenseText"   : "",
+
+    "builds"          : [
+        {
+            "name"      : "Task Board",
+            "id"        : "taskboard",
+
+            "target"    : "taskboard-all-debug.js",
+
+            "files"     : [
+                { "path"  : "lib/Sch/util/Patch.js" },
+                { "path"  : "lib/Sch/patches/Collection.js" },
+                { "path"  : "lib/Sch/patches/OperationDestroy.js" },
+                { "path"  : "lib/Sch/patches/View.js" },
+                { "path"  : "lib/Sch/locale/Locale.js" },
+                { "path"  : "lib/Sch/locale/En.js" },
+                { "path"  : "lib/Sch/mixin/Localizable.js" },
+                { "path"  : "lib/Sch/util/Date.js" },
+                { "path"  : "lib/Sch/util/Cache.js" },
+                { "path"  : "lib/Sch/model/Customizable.js" },
+                { "path"  : "lib/Sch/model/Range.js" },
+                { "path"  : "lib/Sch/model/Resource.js" },
+                { "path"  : "lib/Sch/model/Event.js" },
+                { "path"  : "lib/Sch/data/util/IdConsistencyManager.js" },
+                { "path"  : "lib/Sch/data/util/ModelPersistencyManager.js" },
+                { "path"  : "lib/Sch/data/util/ResourceEventsCache.js" },
+                { "path"  : "lib/Sch/data/mixin/UniversalModelGetter.js" },
+                { "path"  : "lib/Sch/data/mixin/CacheHintHelper.js" },
+                { "path"  : "lib/Sch/data/mixin/EventStore.js" },
+                { "path"  : "lib/Sch/data/mixin/ResourceStore.js" },
+                { "path"  : "lib/Sch/data/EventStore.js" },
+                { "path"  : "lib/Sch/data/ResourceStore.js" },
+
+                { "path"  : "lib/Kanban/locale/En.js" },
+                { "path"  : "lib/Kanban/model/Resource.js"},
+                { "path"  : "lib/Kanban/model/Task.js"},
+                { "path"  : "lib/Kanban/data/mixin/StoreView.js"},
+                { "path"  : "lib/Kanban/data/ViewStore.js"},
+                { "path"  : "lib/Kanban/data/ResourceStore.js"},
+                { "path"  : "lib/Kanban/data/TaskStore.js"},
+
+                { "path"  : "lib/Kanban/dd/DragZone.js"},
+                { "path"  : "lib/Kanban/dd/DropZone.js"},
+                { "path"  : "lib/Kanban/field/AddNew.js"},
+                { "path"  : "lib/Kanban/field/TaskFilter.js"},
+                { "path"  : "lib/Kanban/field/TaskHighlight.js"},
+                { "path"  : "lib/Kanban/field/ColumnFilter.js"},
+                { "path"  : "lib/Kanban/editor/Base.js"},
+                { "path"  : "lib/Kanban/editor/SimpleEditor.js"},
+                { "path"  : "lib/Kanban/menu/UserMenu.js"},
+                { "path"  : "lib/Kanban/menu/UserPicker.js"},
+                { "path"  : "lib/Kanban/menu/UserPictureMenu.js"},
+                { "path"  : "lib/Kanban/menu/TaskMenuItems.js"},
+                { "path"  : "lib/Kanban/menu/TaskMenu.js"},
+                { "path"  : "lib/Kanban/template/Task.js"},
+                { "path"  : "lib/Kanban/selection/TaskModel.js"},
+                { "path"  : "lib/Kanban/view/TaskView.js"},
+                { "path"  : "lib/Kanban/view/TaskColumn.js"},
+                { "path"  : "lib/Kanban/view/TaskBoard.js"}
+            ]
+        },
+        {
+            "name"      : "Task Board CSS",
+            "id"        : "default-css",
+            "target"    : "resources/css/taskboard-all-debug.css",
+            "files"     : [
+                { "path"  : "resources/css/taskboard.css" },
+                { "path"  : "resources/css/taskcolumn.css" },
+                { "path"  : "resources/css/task.css" },
+                { "path"  : "resources/css/task-dragdrop.css" },
+                { "path"  : "resources/css/usermenu.css" },
+                { "path"  : "resources/css/columnfilter.css" },
+                { "path"  : "resources/css/taskmenu.css" }
+            ]
+        }
+    ]
+}
+

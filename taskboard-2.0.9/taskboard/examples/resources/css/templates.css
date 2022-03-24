@@ -1,0 +1,129 @@
+.sch-task,
+.sch-task-inner {
+    border  : 0;
+    padding : 0;
+}
+
+.task-header {
+    background : #aaa;
+    color      : #fff;
+    padding    : 7px 10px;
+    overflow   : hidden;
+}
+
+.sch-taskcolumn-state-Test .task-header {
+    background : #13bc7d;
+}
+
+.task-progress {
+    border        : 1px solid #ccc;
+    background    : #f0f0f0;
+    height        : 6px;
+    margin-bottom : 3px;
+}
+
+.task-progress-inner {
+    background : #ccc;
+    height     : 100%;
+    /* Yay CSS animations */
+    transition : width 0.3s;
+}
+
+.task-body {
+    padding    : 7px 10px;
+    min-height : 50px;
+    overflow   : hidden;
+}
+
+.sch-task-selected div, .sch-task-selected span {
+    text-shadow : none;
+    color       : inherit;
+}
+
+span.task-duration, span.task-done {
+    float        : right;
+    margin-right : 0;
+    margin-left  : 10px;
+}
+
+.task-footer span {
+    margin: 0 4px 1px 4px;
+}
+
+.sch-task-menu-handle {
+    display    : block;
+    visibility : visible !important;
+    top        : 6px;
+    right      : 10px;
+    background : 0 none !important;
+    font       : 16px FontAwesome;
+}
+
+.sch-task-selected .sch-task-menu-handle {
+    color   : #fff;
+    opacity : 1;
+}
+
+.sch-task-selected .sch-task-menu-handle:hover {
+    opacity : 0.7;
+}
+
+.sch-task-menu-handle:before {
+    content : "\f013";
+}
+
+.task-id {
+    font-weight : 600;
+}
+
+.task-user {
+    float        : right;
+    margin-right : 20px;
+    font-weight  : 600;
+}
+
+.thechart {
+    border-bottom : 1px solid rgb(169, 192, 223);
+}
+
+.thechart .x-panel-body-default {
+    background : transparent;
+}
+
+.sch-taskview div.sch-task-selected {
+    background-color : transparent;
+}
+
+.sch-taskview div.sch-task-selected .task-header {
+    background-color : #39aefe;
+    color            : #fff;
+}
+
+.sch-task-name {
+    float  : left;
+    margin : 0;
+    width  : 90%;
+}
+
+.task-userimg {
+    float         : right;
+    width         : 10%;
+    border-radius : 3px;
+}
+
+.sch-phantom-task .task-id {
+    text-indent : -1000px;
+}
+
+.x-title-text {
+    font-size   : 14px;
+    font-weight : 600;
+}
+
+.split .x-title-text {
+    text-align : center;
+}
+
+.x-ie8 .sch-task {
+    border : 1px solid #ccc;
+}

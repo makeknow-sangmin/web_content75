@@ -1,0 +1,26 @@
+.x-panel-body-default {
+    border : 0;
+}
+
+.sch-scrumcolumn {
+    border : 0 none !important;
+}
+
+.sch-task-name {
+    min-height : 20px;
+    display    : block;
+}
+
+.sch-taskview div.special {
+    background : lemonchiffon;
+    color      : #000;
+}
+
+.sch-taskcolumn .x-container-docked-bottom {
+    background : #fff;
+}
+
+.x-panel-header-default-top {
+    box-shadow : none;
+}
+

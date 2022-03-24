@@ -1,0 +1,809 @@
+
+// Debug
+var debugging = true; // or true
+if (typeof console === "undefined") {
+	console = {
+		log: function () { return undefined; }
+	};
+} else if (!debugging || console.log === undefined) {
+	console.log = function () { return undefined; };
+}
+	
+var getBrowserName = function () {
+	var agt = navigator.userAgent.toLowerCase();
+	if (agt.indexOf("chrome") != -1) return 'Chrome';
+	if (agt.indexOf("opera") != -1) return 'Opera';
+	if (agt.indexOf("staroffice") != -1) return 'Star Office';
+	if (agt.indexOf("webtv") != -1) return 'WebTV';
+	if (agt.indexOf("beonex") != -1) return 'Beonex';
+	if (agt.indexOf("chimera") != -1) return 'Chimera';
+	if (agt.indexOf("netpositive") != -1) return 'NetPositive';
+	if (agt.indexOf("phoenix") != -1) return 'Phoenix';
+	if (agt.indexOf("firefox") != -1) return 'Firefox';
+	if (agt.indexOf("safari") != -1) return 'Safari';
+	if (agt.indexOf("skipstone") != -1) return 'SkipStone';
+	if (agt.indexOf("msie") != -1) return 'Internet Explorer';
+	if (agt.indexOf("netscape") != -1) return 'Netscape';
+	if (agt.indexOf("mozilla/5.0") != -1) return 'Mozilla';
+};
+
+var getInternetExplorerVersion = function () {
+	console.log('navigator', navigator);
+	var rv = -1; // Return value assumes failure.    
+	if (navigator.appName == 'Microsoft Internet Explorer') {
+		var ua = navigator.userAgent;
+		var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		if (re.exec(ua) != null)
+			rv = parseFloat(RegExp.$1);
+	}
+	return rv;
+};
+
+var colorToHex = function (color) {
+    if (color.substr(0, 1) === '#') {
+        return color;
+    }
+    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
+    
+    var red = parseInt(digits[2]);
+    var green = parseInt(digits[3]);
+    var blue = parseInt(digits[4]);
+    
+    var rgb = blue | (green << 8) | (red << 16);
+    return digits[1] + '#' + rgb.toString(16);
+};
+
+
+
+var addZero = function (i) {
+	if (i < 10) {
+		i = "0" + i;
+	}
+	return i;
+};
+
+var getActualFullDate = function () {
+	var d = new Date();
+	var day = addZero(d.getDate());
+	var month = addZero(d.getMonth() + 1);
+	var year = addZero(d.getFullYear());
+	var h = addZero(d.getHours());
+	var m = addZero(d.getMinutes());
+	var s = addZero(d.getSeconds());
+	return year + '-' + month + '-' + day + " " + h + ":" + m + ":" + s;
+};
+
+
+//메세지 삭제
+var delete_message = function(id) {
+
+	$.getJSON(vMESSAGE_SERVER + '/HDEL/SIMPLEMSG:' + id + '/message', function(data){
+		console.log('메세지 데이타가 삭제되었습니다.', data);
+	});
+}
+
+//아이디 삭제
+var delete_id = function(key, id) {
+
+	//console.log('아이디 삭제 ' + key + ' : ', id);
+
+	$.getJSON(vMESSAGE_SERVER + '/ZREM/' + key + '/' + id, function(data){
+		console.log('아이디 삭제 ' + key + ' : ', id);
+		console.log('아이디가 삭제되었습니다.', data);
+	});
+}
+
+
+
+var readSetMsg = function (id, callback) {
+	var urlReadMessage = vMESSAGE_SERVER + '/HGETALL/SIMPLEMSG:' + id;
+
+	var curId = id;
+
+	$.getJSON(urlReadMessage, function (data, success, obj) {
+
+		var vo = null;
+		var message = data.HGETALL.message;
+		if(message!=null) {
+			try {
+				var vo = jQuery.parseJSON(message);
+			} catch(e) {
+				console.log('vo parse error data', data);
+				console.log('vo parse error', message);
+			}
+
+			if(vo.id==null) {
+				vo.id = curId;
+				vo.isNull = true;
+			}
+
+		} else {
+			vo = {id : curId, isNull: true};
+		}
+		callback(vo);
+	});
+};
+
+
+var deleteObject = function (id, perment) {
+	console.log('deleteObject id', id);
+	console.log('deleteObject perment', perment);
+
+	//영구 삭제
+	if(perment == true) {
+	} else { //DB에 저장
+
+
+		readSetMsg(id, function (vo) {
+
+			console.log('REDIS vo', vo);
+
+			var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=addNewMsg';
+
+			vo.invisible_flag = 'Y';
+		
+			$.ajax({
+				url: url,
+				type: "post",
+				data: vo,
+				dataType: 'json',
+				success: function (id) {
+					console.log('db saved id', id);
+		
+				},
+				error: function (error) {
+					console.log('error', error);
+		
+				}
+			});
+
+		});
+
+		// $.getJSON(vMESSAGE_SERVER + '/HMSET/SIMPLEMSG:' + id + '/invisible_flag/Y', function(data){
+		// 	console.log('invisible_flag Y 셋팅', data);
+		// });
+
+	}
+
+	//메세지 삭제
+	delete_message(id);
+	//아이디 삭제
+	delete_id('USER_UID_M_' + vCUR_USER_UID, id);
+
+		// $.getJSON(vMESSAGE_SERVER + '/HDEL/SIMPLEMSG:' + id + '/invisible_flag', function(data){
+	// 	console.log('메세지 invisible_flag 삭제', data);
+	// });
+};
+
+var checkRead = function (id) {
+	console.log('checkRead unique_id', id);
+}
+
+var checkBlock = function (id, b) {
+
+	console.log('checkBlock unique_id', id);
+	console.log('checkBlock b', b);
+	if(b==false) {
+		checkRead(id);
+	}
+};
+
+var updateColorMsg = function(rawId, message) {
+		//	console.log("onRelease key", id);
+		$('#the_notes').children('div').each(function (i) {
+			//	console.log("onRelease each id", $(this)[0].id);
+			var o = $(this)[0];
+			if ('#' + o.id == rawId) {
+				var background = o.style.backgroundColor;
+				var color = o.style.color;
+				console.log('background', background);
+				console.log('color', color);
+
+				var unique_id = rawId.substring($.fn.postitall.globals.prefix.length);
+
+
+
+				readSetMsg(unique_id, function (inVo) {
+					inVo['background'] = background;
+					inVo['color'] = color;
+					inVo['message'] = message;
+					saveSetMsg(unique_id, inVo, function (hmset) {
+						console.log('updateColorMsg hmset', hmset);
+					});
+				});
+
+
+
+			}
+		});
+};
+
+
+
+var buffer = {};
+
+var createMsg = function (vo) {
+	
+	console.log('createMsg title', vo.title);
+	console.log('createMsg vo', vo);
+	console.log('createMsg blocked', vo.blocked);
+	console.log('createMsg fixed', vo.fixed);
+
+	var o = $.PostItAll.new({
+		id: vo.id,
+		title: vo.title,
+		from_name: vo.from_name,
+		content: vo.message,
+		msg_type: vo.msg_type,
+		receiver_uid: vo.receiver_uid,
+		owner_uid: vo.owner_uid,
+		parent_uid: vo.parent_uid,
+		space: vo.space,
+		link: vo.link,
+		width: vo.width,
+		height: vo.height,
+		posX: vo.left,
+		posY: vo.top,
+
+		flags: {
+			blocked: vo.blocked,
+			expand: vo.expnd,
+			fixed: vo.fixed,
+			hidden: vo.hidden,
+			highlight: vo.highlight,
+			minimized: vo.minimized
+		},
+		style: {
+			backgroundcolor: vo.background,
+			textcolor: vo.color
+		},
+		//Event 처리
+		onCreated: function (rawId, options, obj) {
+			var o = $(obj)[0];
+			var unique_id = rawId.substring($.fn.postitall.globals.prefix.length);
+			updateObject(rawId, o, null);
+		},
+		onChange: function (rawId) {
+			console.log("onChange");
+			var unique_id = rawId.substring($.fn.postitall.globals.prefix.length);
+
+			var message = $("#pia_editable_" + unique_id).html();
+			//console.log('onChange message', message);
+
+			//Message Buffering
+			buffer[rawId] = message;
+
+			//update Color;
+			updateColorMsg(rawId, message);
+
+
+		},
+		onSelect: function (id) {
+			//   console.log("onSelect id", id);
+		},
+
+		onBlock: function (id, b) {
+			console.log("onBlock id", id);
+			console.log("onBlock b", b);
+			if(b==false) {
+				checkRead(id);
+			}
+			updateState(id, 'blocked', b);
+		},
+		onMinimized: function (id, b) {
+			console.log("onMinimized id", id);
+			console.log("onMinimized b", b);
+			updateState(id, 'minimized', b);
+		},
+		onFixed: function (id, b) {
+			console.log("onFixed id", id);
+			console.log("onFixed b", b);
+			updateState(id, 'fixed', b);
+		},
+		onExpand: function (id, b) {
+			console.log("onExpand id", id);
+			console.log("onExpand b", b);
+			updateState(id, 'expand', b);
+		},
+		
+		onDblClick: function (id) {
+			//  console.log("onDblClick id", id);
+		},
+		onRelease: function (rawId) {
+			//console.log("onRelease id", id);
+
+			var unique_id = rawId.substring($.fn.postitall.globals.prefix.length);
+			if (buffer[rawId] != undefined) {
+				var message = buffer[rawId];
+				$("#pia_editable_" + unique_id).html(message);
+
+			}
+			var message = $("#pia_editable_" + unique_id).html();
+
+			//	console.log("onRelease key", id);
+			$('#the_notes').children('div').each(function (i) {
+				//	console.log("onRelease each id", $(this)[0].id);
+				var o = $(this)[0];
+				if ('#' + o.id == rawId) {
+					updateObject(rawId, o, message);
+				}
+			});
+		},
+		onDelete: function (id) {
+			//console.log("onDelete");
+		}
+	});
+
+	// console.log('o', o);
+}
+
+var updateState = function(id, key, value) {
+	readSetMsg(id, function (inVo) {
+		inVo[key] = value;
+		saveSetMsg(id, inVo, function (hmset) {
+			console.log('updateState hmset', hmset);
+		 });
+	});
+};
+
+var updateSetMsg = function (id, vo, callback) {
+
+	readSetMsg(id, function (inVo) {
+
+		for (key in vo) {
+			inVo[key] = vo[key];
+		}
+		saveSetMsg(id, inVo, function (hmset) {
+			//console.log('updateSetMsg hmset', hmset);
+		 });
+		callback(inVo);
+	});
+};
+
+var saveSetMsg = function (id, vo, callback) {
+
+	vo.change_date = getActualFullDate();
+	var sendMsg = JSON.stringify(vo);
+	sendMsg = encodeURIComponent(sendMsg);
+
+	var urlSaveMessage = vMESSAGE_SERVER + '/HMSET/SIMPLEMSG:' + id
+		+ '/message/' + sendMsg
+		;
+	;
+
+	$.getJSON(urlSaveMessage, function (data) {
+		//console.log('urlSaveMessage', urlSaveMessage);
+		//console.log('saveSetMsg data', data);
+		// readSetMsg(id, function (vo) {
+		// 	console.log('검증결과 저장 내용 vo', vo);
+		// });
+		callback(data.HMSET);
+	});
+
+};
+
+
+var updateObject = function (id, o, message) {
+
+	// console.log('updateObject o', o)
+	// console.log( 'target style', o.style);
+	var backgroundColor = o.style.backgroundColor;
+	var color = o.style.color;
+	var height = o.style.height.replace("px", "");
+	var left = o.style.left.replace("px", "");
+	var top = o.style.top.replace("px", "");
+	var width = o.style.width.replace("px", "");
+
+	var unique_id = id.substring($.fn.postitall.globals.prefix.length);
+
+	// var message = $( "#pia_editable_" + unique_id ).html();
+	// console.log('message', message);
+	// console.log('unique_id', unique_id);
+	// console.log('message', message);
+	 console.log('background', backgroundColor);
+	 console.log('color', color);
+	// console.log('height', parseInt(height));
+	// console.log('left', parseInt(left));
+	// console.log('top', parseInt(top));
+	// console.log('width', parseInt(width));
+	var data = {
+		unique_id: unique_id,
+		background: backgroundColor,
+		color: color,
+		height: parseInt(height),
+		left: parseInt(left),
+		top: parseInt(top),
+		width: parseInt(width)
+	};
+	if (message != null) {
+		var message = message.replace(/<table border="0"/gi, '<table border="1"  style="border-color:' + color + '" ');
+		$("#pia_editable_" + unique_id).html(message);
+		data['message'] = message;
+	}
+
+	updateSetMsg(unique_id, data, function (vo) {
+		console.log('updateObject updateSetMsg', vo);
+	});
+
+};
+
+var getLastId = function(callback) {
+
+	$.getJSON(vMESSAGE_SERVER + '/INCR/seq_simplemsg', function (data) {
+		var lastUid = data.INCR;
+		callback(lastUid);
+	});
+}
+
+var putUniqueId = function (lastUid, owner_uid, type/*S,M*/) {
+
+	var owserString = type + '_' + owner_uid;
+	var urlPutMsgUid = vMESSAGE_SERVER + '/ZADD/USER_UID_' + owserString + '/0/' + lastUid;
+	$.getJSON(urlPutMsgUid, function (result) {
+		console.log('putUniqueId', result);
+	});
+};
+
+var postSimpleMsg = function (from_name, title, receiver_uid, owner_uid, parent_uid, message, msg_type, space, link, top, left, width, height, index) {
+
+	getLastId(function(lastUid) {
+
+		console.log('lastUid', lastUid);
+		var vo = {
+			id: lastUid,
+			title:title,
+			from_name: from_name,
+			to_name: title,
+			receiver_uid: receiver_uid,
+			owner_uid: owner_uid,
+			parent_uid: parent_uid,
+			message: message,
+			msg_type: msg_type,
+			space: space,
+			link: link,
+			top: top,
+			left: left,
+			width: width,
+			height: height,
+			create_date: getActualFullDate(),
+			change_date: getActualFullDate(),
+			index: -1,
+			blocked: false,
+			expand: false,
+			fixed: false,
+			hidden: false,
+			highlight: false,
+			minimized: false
+		};
+
+		//Message 저장
+		saveSetMsg(lastUid, vo, function (result) {	})
+
+		//Title 조정
+		if (receiver_uid > -1) {
+			vo.title = 'To: ' + title;
+		}
+		createMsg(vo);
+
+		//LastUid 입력
+		putUniqueId(lastUid, owner_uid, 'M');
+	});
+
+
+};
+
+var sendSimpleMsg = function (id, receiver_uid, to_name) {
+
+	console.log('sendSimpleMsg unique_id', id);
+	console.log('sendSimpleMsg receiver_uid', receiver_uid);
+	console.log('sendSimpleMsg to_name', to_name);
+
+	getLastId(function(lastUid) {
+		console.log('lastUid', lastUid);
+		
+		readSetMsg(id, function (vo) {
+			console.log('REDIS vo', vo);
+			vo.receiver_uid = receiver_uid;
+			vo.title = 'From: ' + vo.from_name;
+			vo.to_name = to_name;
+			vo.index = vo.id;
+			vo.id = lastUid;
+			vo.create_date = getActualFullDate();
+			vo.change_date = getActualFullDate();
+			vo.blocked = true;
+			vo.expand = false;
+			vo.fixed = true;
+			vo.hidden = false;
+			vo.highlight = false;
+			vo.minimized = false;
+
+			saveSetMsg(lastUid, vo, function (result) {	console.log('sended vo', vo)});
+			putUniqueId(lastUid, receiver_uid, 'S');
+		});
+	});
+
+};
+
+var count = 0;
+
+
+var getMessageIds = function(key, callback) {
+	var urlGetMessageId = vMESSAGE_SERVER + '/ZRANGEBYSCORE/' + key + '/0/1000';
+	$.getJSON(urlGetMessageId, function(data) {
+		ids = data.ZRANGEBYSCORE;
+		callback(ids);
+	});
+};
+var readMymeno = function(owner_uid) {
+
+	//메모읽기
+	var key = 'USER_UID_M_' + owner_uid;
+	getMessageIds(key, function(ids) {
+		if(ids!=null) {
+			for(var i=0; i<ids.length; i++) {
+				var curId =  ids[i];
+
+				console.log('readMymeno data ids[' + i + ']', curId);
+				
+				readSetMsg(curId, function (vo) {
+					
+					if(vo.isNull==true) {
+						console.log('vo is null', vo.id);
+						delete_id(key, vo.id);
+					} else if(vo.id==null){
+						console.log('vo id is null', vo);
+					} else {
+						//console.log('vo', vo);
+						createMsg(vo);
+					}
+				});
+			}
+		}
+	});
+}
+
+var readMymessage = function(owner_uid) {
+
+	//메모읽기
+	var key = 'USER_UID_S_' + owner_uid;
+	getMessageIds(key, function(ids) {
+		if(ids!=null) {
+			for(var i=0; i<ids.length; i++) {
+				var curId =  ids[i];
+
+				console.log('readMymessage data ids[' + i + ']', curId);
+				
+				readSetMsg(curId, function (vo) {
+					
+					if(vo.isNull==true) {
+						console.log('vo is null', vo.id);
+						delete_id(key, vo.id);
+					} else if(vo.id==null){
+						console.log('vo id is null', vo);
+					} else {
+						console.log('vo', vo);
+						createMsg(vo);
+					}
+				});
+			}
+		}
+	});
+}
+var touch = function () {
+	//내 메모 읽기
+	readMymeno(vCUR_USER_UID);
+	//내 메세지 읽기
+	readMymessage(vCUR_USER_UID);
+};
+
+
+console.log('start setInterval', count);
+
+setInterval(function () {
+	//console.log('count', count);
+	//touch();
+}, 10000);
+
+
+/*****************************************************
+ *  MYSQL 에 직접 넣는 코드들
+ */
+
+var deleteObject_db = function (id, perment) {
+	console.log('deleteObject_db id', id);
+	console.log('deleteObject_db perment', perment);
+
+	var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=deleteMsg';
+	$.ajax({
+		url: url,
+		type: "post",
+		data: {
+			unique_id: id,
+			permanent: perment
+		},
+		dataType: 'json',
+		success: function (cnt) {
+			console.log('checkRead cnt', cnt);
+		},
+		error: function (error) {
+			console.log('checkRead error', error);
+
+		}
+	});
+};
+
+var postSimpleMsg_db = function (from_name, title, receiver_uid, owner_uid, parent_uid, message, msg_type, space, link, top, left, width, height, index) {
+	
+		var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=addNewMsg';
+		console.log('postSimpleMsg', [url, from_name, title, receiver_uid, owner_uid, parent_uid, message, msg_type, space, link, top, left, width, height, index]);
+	
+	
+	
+		$.ajax({
+			url: url,
+			type: "post",
+			data: {
+				from_name: from_name,
+				to_name: title,
+				receiver_uid: receiver_uid,
+				owner_uid: owner_uid,
+				parent_uid: parent_uid,
+				message: message,
+				msg_type: msg_type,
+				space: space,
+				link: link,
+				top: top,
+				left: left,
+				width: width,
+				height: height,
+				index: -1
+			},
+			dataType: 'json',
+			success: function (id) {
+				console.log('id', id);
+	
+				var vo = {
+					id: id,
+					from_name: from_name,
+					to_name: title,
+					receiver_uid: receiver_uid,
+					owner_uid: owner_uid,
+					parent_uid: parent_uid,
+					message: message,
+					msg_type: msg_type,
+					space: space,
+					link: link,
+					top: top,
+					left: left,
+					width: width,
+					height: height,
+					index: -1
+				};
+	
+				if (receiver_uid > -1) {
+					vo.title = 'To: ' + title;
+				}
+				createMsg(vo);
+	
+			},
+			error: function (error) {
+				console.log('error', error);
+	
+			}
+		});
+	};
+
+var updateObject_db = function (id, o, message) {
+	
+		console.log('updateObject_db o', o)
+		console.log('target style', o.style);
+		var backgroundColor = o.style.backgroundColor;
+		var color = o.style.color;
+		var height = o.style.height.replace("px", "");
+		var left = o.style.left.replace("px", "");
+		var top = o.style.top.replace("px", "");
+		var width = o.style.width.replace("px", "");
+	
+		var unique_id = id.substring($.fn.postitall.globals.prefix.length);
+	
+		// var message = $( "#pia_editable_" + unique_id ).html();
+		// console.log('message', message);
+	
+		console.log('unique_id', unique_id);
+		console.log('message', message);
+		console.log('background', backgroundColor);
+		console.log('color', color);
+		console.log('height', parseInt(height));
+		console.log('left', parseInt(left));
+		console.log('top', parseInt(top));
+		console.log('width', parseInt(width));
+	
+		var data = {
+			unique_id: unique_id,
+			background: backgroundColor,
+			color: color,
+			height: parseInt(height),
+			left: parseInt(left),
+			top: parseInt(top),
+			width: parseInt(width)
+		};
+		if (message != null) {
+			var message = message.replace(/<table border="0"/gi, '<table border="1"  style="border-color:' + color + '" ');
+			$("#pia_editable_" + unique_id).html(message);
+			data['message'] = message;
+		}
+	
+		var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=updateMsg';
+		$.ajax({
+			url: url,
+			type: "post",
+			data: data,
+			dataType: 'json',
+			success: function (cnt) {
+				console.log('updateObject_db cnt', cnt);
+			},
+			error: function (error) {
+				console.log('updateObject_db error', error);
+	
+			}
+		});
+	}
+
+	var touch_db = function () {
+
+	var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=readMymessage';
+
+	$.getJSON(url, function (data) {
+
+		console.log('data', data);
+		var count = data['count'];
+		var datas = data['datas'];
+
+		for (var i = 0; i < count; i++) {
+			var rec = datas[i];
+			//var items = [];
+			$.each(rec, function (key, val) {
+				//console.log(key, val );
+				//items.push( "<li id='" + key + "'>" + val + "</li>" );
+			});
+			console.log('rec', rec);
+			rec.top = 10 + i * 50;
+			rec.left = 300 + i * 50;
+			rec.title='From: ' + rec.from_name;
+			rec.blocked = true;
+			rec.fixed = true;
+			createMsg(rec);
+		}
+		count++;
+
+	});
+};
+
+
+var sendSimpleMsg_db = function (unique_id, receiver_uid, to_name) {
+
+	console.log('sendSimpleMsg unique_id', unique_id);
+	console.log('sendSimpleMsg receiver_uid', receiver_uid);
+	console.log('sendSimpleMsg to_name', to_name);
+	var url = CONTEXT_PATH + '/collab/simpleMsg.do?method=sendSimpleMsg';
+	$.ajax({
+		url: url,
+		type: "post",
+		data: {
+			unique_id: unique_id,
+			receiver_uid: receiver_uid,
+			to_name: to_name
+		},
+		dataType: 'json',
+		success: function (data) {
+			console.log('data', data);
+
+		},
+		error: function (error) {
+			console.log('error', error);
+
+		}
+	});
+};
+
+};

@@ -1,0 +1,35 @@
+/*
+
+Kanban TaskBoard 2.0.9
+Copyright(c) 2009-2016 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/license
+
+*/
+
+.sch-taskcolumn {
+    border-radius    : 1px;
+}
+
+.sch-taskcolumn .sch-header-icon {
+    background      : url(../images/header.png) no-repeat 2px center;
+    background-size : 12px;
+}
+
+.sch-taskview{
+    padding : 10px 2%;
+}
+
+.sch-taskcolumn .x-panel-header-text {
+    font-size   : 1.5em;
+    font-weight : normal;
+    margin      : 5px 0;
+    display     : block;
+    line-height : 22px;
+}
+
+/* https://www.sencha.com/forum/showthread.php?310308-6.0.2-DragSelector-US-missing-CSS-file&p=1132940#post1132940 */
+.sch-taskcolumn .x-view-selector {
+    position : absolute;
+    border   : 1px dotted #3399BB;
+}

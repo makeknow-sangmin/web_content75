@@ -1,0 +1,70 @@
+{ 
+text: '.',
+children: [{
+    text:'CNC',
+    expanded: true,
+    children:[{
+        text:'CNC01',
+        id:'CNC01',
+        leaf:true
+    },{
+        text:'CNC02',
+        id:'CNC03',
+        leaf:true
+    },{
+        text:'CNC04',
+        id:'CNC04',
+        leaf:true
+    },{
+        text:'CNC05',
+        id:'CNC05',
+        leaf:true
+    },{
+        text:'CNC06',
+        id:'CNC06',
+        leaf:true
+    },{
+        text:'CNC07',
+        id:'CNC07',
+        leaf:true
+    },{
+        text:'CNC08',
+        id:'CNC08',
+        leaf:true
+    },{
+        text:'CNC09',
+        id:'CNC09',
+        leaf:true
+    },{
+        text:'CNC10',
+        id:'CNC10',
+        leaf:true
+    },{
+        text:'CNC11',
+        id:'CNC11',
+        leaf:true
+    },{
+        text:'CNC12',
+        id:'CNC12',
+        leaf:true
+    }]
+},{
+    text:'EDM',
+    children:[{
+        text:'EDM01',
+        id:'EDM01',
+        leaf:true
+    }]
+},{
+    text:'WCM',
+    children:[{
+        text:'Absolute Layout Form',
+        id:'abs-form',
+        leaf:true
+    },{
+        text:'Tabs with Nested Layouts',
+        id:'tabs-nested-layouts',
+        leaf:true
+    }]
+}]
+}

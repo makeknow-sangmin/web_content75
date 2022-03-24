@@ -1,0 +1,1607 @@
+/*Filter styles*/
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.rss.opacity {-webkit-filter: opacity(60%);}
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+TD {color: #143434; font-size: 9}
+.xl66 {color: #F00; font-size: 9px; background: #EAEAEA;}
+
+.x-body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    color: #333333;
+}
+.x-panel-header-text-default,
+.x-panel-header-text-default-framed {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #333;
+}
+
+#app-header {
+    text-align: center;
+    font-family: arial;
+}
+#app-center .x-panel-header {
+    font-size: 13px;
+    text-align: center;
+    padding-left: 178px;
+    font-family: helvetica, arial, sans-serif;
+    color: #455C6F;
+}
+#app-west {
+    border-right: 1px solid #99BBE8;
+}
+#app-west .x-panel-body {
+    background: #D0DEF0;
+}
+#app-header-content h1 {
+    float:left;
+    margin:8px 5px;
+    font-size: 18px;
+    color: #455C6F;
+}
+#app-logo {
+    float: left;
+    margin: 0px 0px;
+    width: 30px;
+}
+#app-logo .logo-top,
+#app-logo .logo-bottom {
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0  3px;
+    border: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #333333;
+}
+.x-ie #app-logo .logo-top {
+    margin-bottom: -1px;
+}
+.ext-border-box #app-logo .logo-top,
+.ext-border-box #app-logo .logo-bottom {
+    height: 1px;
+}
+#logo-body {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    border-width: 3px 1px 0;
+    border-style: solid;
+    border-color: #333333;
+    background: #fff;
+    font-weight: bold;
+    padding: 1px 0 2px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #455C6F;
+}
+#app-msg {
+/*    background: #FAD163;*/
+    color: #c8a52e;
+    padding: 2px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+ 	.mainBackground {
+ 		background:#D5E2F2; 
+ 		filter=progid:DXImageTransform.Microsoft.Gradient(GradientType=1, EndColorStr=#AEC7E1, StartColorStr=#FFFFFF);
+ 	}
+ 	.highlight {
+			border-bottom: red  1px  solid;
+			border-left: red  1px  solid;
+			border-right: red  1px  solid;
+			border-top: red  1px  solid;
+ 	}
+ 	.calendarButton {
+	 	cursor: pointer;
+	 	/*float:left;*/
+	 	margin:0px;
+ 		/*padding-top: 5px;*/
+	 	padding-left: 3px;
+	 	padding-right: 3px;
+	 	text-align:center; 
+ 	}
+   	.processButton {
+	 	cursor: pointer;
+	 	border-bottom: #777777 1px solid;
+	 	border-left: #777777 1px solid;
+		border-right: #777777 1px solid; 
+		border-top: #777777 1px solid;
+	 	padding-top: 3px;
+	 	padding-left: 3px;
+	 	padding-right: 3px;
+	 	padding-bottom: 3px; 
+	 	text-align:center; 
+	 	font-weight:bold;
+	 	background: #EAEAEA;
+	 	color:#333333;
+	 	margin:5px;
+ 	}
+  	.realButton {
+	 	cursor: pointer;
+	 	border-bottom: #4F81BD 1px solid;
+	 	border-left: #4F81BD 1px solid;
+		border-right: #4F81BD 1px solid; 
+		border-top: #4F81BD 1px solid;
+	 	padding-top: 3px;
+	 	padding-left: 3px;
+	 	padding-right: 3px;
+	 	padding-bottom: 3px; 
+	 	text-align:center; 
+	 	font-weight:bold;
+	 	background: #25B726;
+	 	color:white;
+	 	margin:5px;
+ 	}
+ 	.exitButton {
+	 	cursor: pointer;
+	 	border-bottom: red 1px solid;
+	 	border-left: red 1px solid;
+		border-right: red 1px solid; 
+		border-top: red 1px solid;
+	 	padding-top: 3px;
+	 	padding-left: 3px;
+	 	padding-right: 3px;
+	 	padding-bottom: 3px; 
+	 	text-align:center; 
+	 	font-weight:bold;
+	 	background:orange;
+	 	color:white;
+	 	margin:5px;
+ 	}
+
+	.collab {
+ 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/users.png);
+	}
+	.design {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/rulers.png);
+	}
+	.sales {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/camera-3.png);
+	}
+/* 	.project { */
+/* 	    background-image:url(../../extjs5/module/shared/icons/fam/view_BOMView.png); */
+/* 	} */
+	.production {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/swap.png);
+	}
+	.my_purchase {
+	    background-image:url(../../extjs5/module/shared/icons/fam/cart.png);
+	}
+	.purchase {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/list.png);
+	}
+	.quality {
+	 	-webkit-filter: opacity(60%);
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/star-2.png);
+	}
+	.statistics {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/fam/bar_chart.png);
+	}
+	.nav {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/fam/folder_go.png);
+	}
+	.cal {
+	    background-image:url(../../extjs5/module/shared/icons/fam/calendar.gif);
+	}
+	.admin {
+	 	-webkit-filter: opacity(60%);
+	    background-image:url(../../extjs5/module/shared/icons/bmaster/settings-2.png);
+	}
+.document{
+	-webkit-filter: opacity(60%);
+    background-image:url(../../extjs5/module/shared/icons/bmaster/folder-duplicate.png) !important;
+}
+	.icon-grid {
+	          background-image:url(../../extjs5/module/shared/icons/fam/grid.png) !important;
+	      }
+    .search {
+        background-image:url(../../extjs5/module/shared/icons/fam/arrow_refresh.png) !important;
+    }
+    .add {
+        background-image:url(../../extjs5/module/shared/icons/fam/add.gif) !important;
+    }
+    .option {
+        background-image:url(../../extjs5/module/shared/icons/fam/plugin.gif) !important;
+    }
+    .remove {
+        background-image:url(../../extjs5/module/shared/icons/fam/delete.gif) !important;
+    }
+    .pencil {
+        background-image:url(../../extjs5/module/shared/icons/fam/pencil.png) !important;
+    }
+    .application_view_detail{
+        background-image:url(../../extjs5/module/shared/icons/fam/application_view_detail.png) !important;
+    }
+    .door_in{
+        background-image:url(../../extjs5/module/shared/icons/fam/door_in.png) !important;
+    }
+    .save {
+        background-image:url(../../extjs5/module/shared/icons/fam/save.gif) !important;
+    }
+    .saved {
+        background-image:url(../../extjs5/module/shared/icons/fam/saved.png) !important;
+    }
+    .number01 {
+        background-image:url(../../extjs5/module/shared/icons/fam/icon_down_lank1.gif) !important;
+    }
+    .number02 {
+        background-image:url(../../extjs5/module/shared/icons/fam/icon_down_lank2.gif) !important;
+    }
+    .number03 {
+        background-image:url(../../extjs5/module/shared/icons/fam/icon_down_lank3.gif) !important;
+    }
+    .number04 {
+        background-image:url(../../extjs5/module/shared/icons/fam/icon_down_lank4.gif) !important;
+    }
+    .number05 {
+        background-image:url(../../extjs5/module/shared/icons/fam/icon_down_lank5.gif) !important;
+    }
+    .receipt {
+        background-image:url(../../extjs5/module/shared/icons/fam/EPMPerformSignoffTask.gif) !important;
+    }
+    .deny {
+        background-image:url(../../extjs5/module/shared/icons/fam/exclamation.png) !important;
+    } 
+    .accept {
+    	background-image:url(../../extjs5/module/shared/icons/fam/accept.png) !important;
+    }
+    .star {
+    	background-image:url(../../extjs5/module/shared/icons/fam/star.png) !important;
+    }
+    .MSExcelTemplateX {
+    	background-image:url(../../extjs5/module/shared/icons/fam/MSExcelTemplateX.png) !important;
+    }
+    .return {
+        background-image:url(../../extjs5/module/shared/icons/fam/error_delete.png) !important;
+    } 
+   .door_out {
+        background-image:url(../../extjs5/module/shared/icons/bmaster/out.png) !important;
+    } 
+    .calendar {
+        background-image:url(../../extjs5/module/shared/icons/bmaster/calendar.png) !important;
+    }
+    
+   .package_add {
+        background-image:url(../../extjs5/module/shared/icons/fam/package_add.png) !important;
+    } 
+   .AllocationMapRevision {
+        background-image:url(../../extjs5/module/shared/icons/fam/AllocationMapRevision.png) !important;
+    }
+   .Role {
+        background-image:url(../../extjs5/module/shared/icons/fam/Role.png) !important;
+    }
+   .com-logo {
+        background-image:url(../../media/com-logo.png) !important;
+    }
+   .house{
+        background-image:url(../../extjs5/module/shared/icons/fam/house.png) !important;
+    }
+   .arrow_refresh_small{
+        background-image:url(../../extjs5/module/shared/icons/fam/arrow_refresh_small.png) !important;
+    }
+   .MSExcelX{
+        background-image:url(../../extjs5/module/shared/icons/fam/MSExcelX.png) !important;
+    }
+    .brick_add{
+        background-image:url(../../extjs5/module/shared/icons/fam/brick_add.png) !important;
+    }
+
+   .brick_edit{
+        background-image:url(../../extjs5/module/shared/icons/fam/brick_edit.png) !important;
+    }
+
+   .brick_go{
+        background-image:url(../../extjs5/module/shared/icons/fam/brick_go.png) !important;
+    }
+    
+   .arrow_rotate_clockwise{
+        background-image:url(../../extjs5/module/shared/icons/fam/arrow_rotate_clockwise.png) !important;
+    }
+     
+   .complete{
+        background-image:url(../../extjs5/module/shared/icons/fam/tick.png) !important;
+    }
+    
+   .reopen{
+        background-image:url(../../extjs5/module/shared/icons/fam/folder_add.png) !important;
+    }
+   .award_star_gold_1{
+        background-image:url(../../extjs5/module/shared/icons/fam/award_star_gold_1.png) !important;
+    }
+    
+   .cloud_login{
+        background-image:url(../../extjs5/module/shared/icons/fam/cloud_login.png) !important;
+    }
+   .house{
+        background-image:url(../../extjs5/module/shared/icons/fam/house.png) !important;
+    }
+   .exchange{
+        background-image:url(../../extjs5/module/shared/icons/fam/exchange.png) !important;
+    }
+    
+    .settings {
+    background-image:url(../../extjs5/module/shared/icons/fam/folder_wrench.png);
+	}
+	.nav {
+	    background-image:url(../../extjs5/module/shared/icons/fam/folder_go.png);
+	}
+	.info {
+	    background-image:url(../../extjs5/module/shared/icons/fam/information.png);
+	}
+	.purchaseAndprocess {
+		background-image:url(../../extjs5/module/shared/icons/fam/AppSoftware.png);
+	}
+	.emtyprocess {
+		background-image:url(../../extjs5/module/shared/icons/fam/EPMTask.png);
+	}
+	
+/***
+process icoons
+**/
+.status_away{  background-image:url(../../extjs5/module/shared/icons/fam/status_away.png) !important; }
+.status_online{  background-image:url(../../extjs5/module/shared/icons/fam/status_online.png) !important; }
+.status_busy{  background-image:url(../../extjs5/module/shared/icons/fam/status_busy.png) !important; }
+
+.status_pause { background-image:url(../../extjs5/module/shared/icons/fam/cancel.png) !important; }
+.status_plan { background-image:url(../../extjs5/module/shared/icons/fam/new_task.png) !important; }
+
+
+        /*
+ * Icon styles
+ */
+.tasks-new {
+    background: url('../../extjs5/module/shared/icons/fam/new_task.png') no-repeat;
+}
+.tasks-new-folder {
+    background-image: url('../../extjs5/module/shared/icons/fam/new_folder.png');
+}
+.tasks-new-list {
+    background-image: url('../../extjs5/module/shared/icons/fam/new_list.png');
+}
+.tasks-delete-task {
+    background-image: url('../../extjs5/module/shared/icons/fam/delete_task.png');
+}
+.tasks-delete-list {
+    background-image: url('../../extjs5/module/shared/icons/fam/delete_list.png');
+}
+.tasks-delete-folder {
+    background-image: url('../../extjs5/module/shared/icons/fam/delete_folder.png');
+}
+.tasks-mark-complete {
+    background-image: url('../../extjs5/module/shared/icons/fam/mark_complete.png');
+}
+.tasks-mark-active {
+    background-image: url('../../extjs5/module/shared/icons/fam/mark_active.png');
+}
+.tasks-show-all {
+    background-image: url('../../extjs5/module/shared/icons/fam/show_all.png');
+}
+.tasks-show-active {
+    background-image: url('../../extjs5/module/shared/icons/fam/show_active.png');
+}
+.tasks-show-complete {
+    background-image: url('../../extjs5/module/shared/icons/fam/show_complete.png');
+}
+   
+.upload-icon {
+    background: url('../../extjs5/module/shared/icons/fam/attach.png') no-repeat 0 0 !important;
+}
+
+.EPMPerformSignoffTask {
+    background: url('../../extjs5/module/shared/icons/fam/EPMPerformSignoffTask.png') no-repeat 0 0 !important;
+}
+
+.play {
+    background: url('../../extjs5/module/shared/icons/fam/play.png') no-repeat 0 0 !important;
+}
+
+.complete {
+    background: url('../../extjs5/module/shared/icons/fam/tick.png') no-repeat 0 0 !important;
+}
+
+.reopen {
+    background: url('../../extjs5/module/shared/icons/fam/folder_add.png') no-repeat 0 0 !important;
+}
+
+.cross {
+    background: url('../../extjs5/module/shared/icons/fam/cross.png') no-repeat 0 0 !important;
+}
+
+.database_link {
+    background: url('../../extjs5/module/shared/icons/fam/database_link.png') no-repeat 0 0 !important;
+}
+
+.application_form_edit {
+    background: url('../../extjs5/module/shared/icons/fam/application_form_edit.png') no-repeat 0 0 !important;
+}
+
+        
+.x-grid-checkheader
+{
+    background: url('../../extjs5/module/ux/css/images/unchecked.gif') no-repeat  center center;
+}
+.x-grid-checkheader-checked
+{
+    background: url('../../extjs5/module/ux/css/images/checked.gif') no-repeat  center center;
+}
+.group_go {
+    background-image:url(../../extjs5/module/shared/icons/fam/group_go.png);
+}
+.bricks {
+    background-image:url(../../extjs5/module/shared/icons/fam/bricks.png);
+}
+
+        
+        
+	.menuMidLabel {
+		background:#EAEAEA;font:#555555; font-weight:bold; padding: 2px; margin-bottom:3px; margin-top:5px;
+			border-bottom: #333333  0px dotted;
+			border-left: #333333 0px dotted;
+			border-right: #333333 0px dotted;
+			border-top: #333333 0px dotted;
+	}
+	.menuChildLabel {
+		color:#15498B;font-weight:normal; padding: 1px; padding-left:5px; margin-bottom:2px;
+	}
+	.menuBackground {
+		height:100%;padding-top:5px;
+		background:#F9F9F9;
+		filter=progid:DXImageTransform.Microsoft.Gradient(GradientType=0, EndColorStr=#FFFFFF, StartColorStr=#FFFFFF);
+
+	}
+
+.x-btn-default-small .x-btn-inner {
+    font-size: 12px;
+}
+
+.x-btn-default-large .x-btn-inner {
+    font-size: 12px;
+    color: #555575;
+    font-weight: bold;
+    /*background-color: white !important;*/
+	/*background-image: url(resources/images/xxx.jpg) ;*/
+   
+    /*background: D4E2F1;*/
+}
+
+.my-big-btn .x-btn-inner {
+   font-size: 12px;
+   color: #555575;
+   font-weight: bold;
+}
+.my-mid-btn .x-btn-inner {
+   font-size: 12px;
+   color: #333363;
+   font-weight: bold;
+}
+/*
+.x-nav-toolbar .x-btn-text{
+	padding-left:2px;
+	padding-right:2px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;
+	font-color: red;
+	font-weight: bold;
+	text-shadow: white 1px 1px 1px;
+}
+
+
+.x-toolbar .x-btn-text{
+border: 0 none;
+background: red;
+vertical-align: middle;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 24px;
+font-weight: bold;
+font-color: red;
+}
+*/
+
+
+
+	h2 {
+	    color:#083772 !important;
+	    margin: 5px !important;
+	    padding: 3px;
+	    background:#eee;
+	    width:100%;
+	}
+	
+	h3 {
+	    font-weight:normal !important;
+	    margin: 5px;
+	}
+	h4 {
+		font-size: 12px;
+	}
+	
+	.x-btn {
+	    margin-left: 5px;
+	    margin-bottom: 5px;
+	}
+	
+	/*buttons
+	.x-btn-default-large .add {
+	    background-image: url(../../extjs5/module/shared/icons/fam/add.gif) !important;
+	}
+	.x-btn-default-small .add {
+	    background-image: url(../../extjs5/module/shared/icons/fam/add16.gif) !important;
+	}
+	.x-btn-default-medium .add {
+	    background-image: url(../../extjs5/module/shared/icons/fam/add24.gif) !important;
+	}
+	*/
+	
+#loading-mask {
+  position: absolute;
+  left:     0;
+  top:      0;
+  width:    100%;
+  height:   100%;
+  z-index:  20000;
+  background-color: white;
+}
+
+#loading {
+  position: absolute;
+  left:     50%;
+  top:      50%;
+  padding:  2px;
+  z-index:  20001;
+  height:   auto;
+  margin:   -35px 0 0 -30px;
+}
+
+#loading .loading-indicator {
+  background: url('../../extjs5/module/shared/icons/fam/loading.gif') no-repeat;
+  color:      #555;
+  font:       bold 13px tahoma,arial,helvetica;
+  padding:    8px 20px;
+  margin:     0;
+  text-align: center;
+  height:     auto;
+}
+
+ 	
+p {
+    margin:5px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+body {
+    font-family:'lucida grande',tahoma,arial,sans-serif;
+    font-size:12px;
+    margin: 3px;
+}
+a {
+    color:#15428B;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#header {
+    background: #7F99BE url(../../extjs5/module/shared/icons/fam/layout-browser-hd-bg.gif) repeat-x center;
+}
+#header h1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+#start-div h2 {
+    font-size: 12px;
+    color: #555;
+    padding-bottom:5px;
+    border-bottom:1px solid #C3D0DF;
+}
+#start-div p {
+    margin: 10px 0;
+}
+#details-panel h2 {
+    padding:10px 10px 0;
+    font-size:12px;
+    color:#15428B;
+}
+#details-panel p {
+    padding:10px 10px 0;
+}
+#details-panel pre {
+    border-top:1px dotted #ddd;
+    border-bottom:1px dotted #ddd;
+    margin-top:10px;
+    padding:0 5px;
+    background:#f5f5f5;
+}
+#details-panel .details-info {
+    margin:15px;
+    padding:15px;
+    border:1px dotted #999;
+    color:#555;
+    background: #f9f9f9;
+}
+.x-tab-panel-header-plain .x-tab-strip-top {
+    background: #DFE8F6 url(../../resources/themes/../../extjs5/module/shared/icons/fam/default/tabs/tab-strip-bg.gif) repeat-x scroll center bottom !important;
+}
+.custom-accordion .x-panel-body{
+    background:#ffe;
+    text-align:center;
+}
+.custom-accordion .x-panel-body p {
+    font-family:georgia,serif;
+    padding:20px 80px !important;
+    font-size:18px;
+    color:#15428B;
+}
+.custom-accordion .x-panel-header-text {
+    font-weight:bold;
+    font-style:italic;
+    color:#555;
+}
+#form-panel .x-panel-footer {
+    background:#DFE8F6;
+    border-color:#99BBE8;
+    border-style:none solid solid;
+    border-width:0pt 1px 1px;
+}
+#table-panel .x-table-layout {
+    padding:5px;
+}
+#table-panel .x-table-layout td {
+    vertical-align:top;
+    padding:5px;
+    font-size: 12px;
+}
+.icon-send {
+    background-image:url(../../extjs5/module/shared/icons/fam/email_go.png) !important;
+}
+.icon-save {
+    background-image:url(../../extjs5/module/shared/icons/fam/disk.png) !important;
+}
+.icon-print {
+    background-image:url(../../extjs5/module/shared/icons/fam/printer.png) !important;
+}
+.icon-spell {
+    background-image:url(../../extjs5/module/shared/icons/fam/spellcheck.png) !important;
+}
+.icon-attach {
+    background-image:url(../../extjs5/module/shared/icons/fam/page_attach.png) !important;
+}
+.PSBOMView {
+    background-image:url(../../extjs5/module/shared/icons/fam/PSBOMView.png) !important;
+}
+.lightbulb_add {
+    background-image:url(../../extjs5/module/shared/icons/fam/lightbulb_add.png) !important;
+}
+.barcode {
+    background-image:url(../../extjs5/module/shared/icons/fam/barcode.png) !important;
+}
+.email_go {
+    background-image:url(../../extjs5/module/shared/icons/fam/email_go.png) !important;
+}
+
+.MEProcessRevision {
+    background-image:url(../../extjs5/module/shared/icons/fam/MEProcessRevision.png) !important;
+}
+.table {
+    background-image:url(../../extjs5/module/shared/icons/fam/table.png) !important;
+}
+.Drawing {
+    background-image:url(../../extjs5/module/shared/icons/fam/Drawing.png) !important;
+}
+.vcard {
+    background-image:url(../../extjs5/module/shared/icons/fam/vcard.png) !important;
+}
+.office-building-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/office-building-icon.png) !important;
+}
+.Applications-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/Applications-icon.png) !important;
+}
+
+.Product-documentation-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/Product-documentation-icon.png) !important;
+}
+
+.Sport-Wrestler-Male-Light-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/Sport-Wrestler-Male-Light-icon.png) !important;
+}
+
+.Person-Male-Light-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/Person-Male-Light-icon.png) !important;
+}
+
+.App-package-utilities-icon {
+    background-image:url(../../extjs5/module/shared/icons/fam/App-package-utilities-icon.png) !important;
+}
+
+.user_edit{
+    background-image:url(../../extjs5/module/shared/icons/fam/user_edit.png) !important;
+}
+
+.project{
+    background-image:url(../../extjs5/module/shared/icons/fam/report.png) !important;
+}
+.bom{
+    background-image:url(../../extjs5/module/shared/icons/fam/database_table.png) !important;
+}
+.email_go {
+    background-image:url(../../extjs5/module/shared/icons/fam/email_go.png) !important;
+}
+.PDF {
+    background-image:url(../../extjs5/module/shared/icons/fam/PDF.png) !important;
+}
+.application_side_expand {
+    background-image:url(../../extjs5/module/shared/icons/fam/application_side_expand.png) !important;
+}
+.page_copy {
+    background-image:url(../../extjs5/module/shared/icons/fam/page_copy.png) !important;
+}
+
+.cart_go {
+    background-image:url(../../extjs5/module/shared/icons/fam/cart_go.png) !important;
+}
+
+.paste_plain {
+    background-image:url(../../extjs5/module/shared/icons/fam/paste_plain.png) !important;
+}
+
+.copy {
+    background-image:url(../../extjs5/module/shared/icons/fam/copy.png) !important;
+}
+
+.application_view_tile {
+    background-image:url(../../extjs5/module/shared/icons/fam/application_view_tile.png) !important;
+}
+
+.textfield {
+    background-image:url(../../extjs5/module/shared/icons/fam/textfield.png) !important;
+}
+
+.Orange_Loop {
+    background-image:url(../../extjs5/module/shared/icons/fam/Orange/Loop.png) !important;
+}
+
+.nxsession {
+    background-image:url(../../extjs5/module/shared/icons/fam/nxsession.png);
+}
+
+.arrow_right {
+    background-image:url(../../extjs5/module/shared/icons/fam/arrow_right.png);
+}
+.arrow-right {
+    background-image:url(../../extjs5/module/shared/icons/bmaster/arrow-right.png);
+}
+.tray {
+    background-image:url(../../extjs5/module/shared/icons/bmaster/tray.png);
+}
+
+.eye {
+    background-image:url(../../extjs5/module/shared/icons/bmaster/eye.png);
+}
+
+/**FLAG**/
+.flag-china {
+    background-image:url(../../extjs5/module/shared/icons/flag/china.png) !important;
+}
+.flag-germany {
+    background-image:url(../../extjs5/module/shared/icons/flag/germany.png) !important;
+}
+.flag-japan {
+    background-image:url(../../extjs5/module/shared/icons/flag/japan.png) !important;
+}
+.flag-south_korea {
+    background-image:url(../../extjs5/module/shared/icons/flag/south_korea.png) !important;
+}
+/*
+.flag-usa {
+    background-image:url(../../extjs5/module/shared/icons/flag/usa.png) !important;
+}
+*/
+.flag-usa {
+    background-image:url(../../extjs5/module/shared/icons/flag/English-Language-Flag-1-icon.png) !important;
+}
+
+
+.flag-japan {
+    background-image:url(../../extjs5/module/shared/icons/flag/japan.png) !important;
+}
+.flag-german {
+    background-image:url(../../extjs5/module/shared/icons/flag/german.png) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.email-form .x-panel-mc .x-panel-tbar .x-toolbar {
+    border-top:1px solid #C2D6EF;
+    border-left:1px solid #C2D6EF;
+    border-bottom:1px solid #99BBE8;
+    margin:-5px -4px 0;
+}
+.inner-tab-custom .x-border-layout-ct {
+    background: #fff;
+}
+.x-panel-body .absolute-form-toolbar {
+    border-width: 0 0 1px 0 !important;
+}
+.absolute-form-panel-body,
+.absolute-form-panel-body .x-panel-body {
+    background: transparent;
+}
+
+.task.x-grid-cell-inner {
+            padding-left: 15px;
+}
+.x-grid-row-summary .x-grid-cell-inner {
+    font-weight: bold;
+    font-size: 11px;
+}
+.icon-grid {
+    background: url(../shared/icons/fam/grid.png) no-repeat 0 -1px;
+}
+
+.mplm-button.x-btn {
+    font-weight: bold;
+    font-size: 11px;
+    padding:  0px;
+}
+
+.search-item {
+      padding: 3px 5px;
+      white-space: normal;
+      color: #555;
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+  }
+
+  .search-item h3 {
+      display: block;
+      font: inherit;
+      font-weight: bold;
+      color: #222;
+  }
+
+  .search-item h3 span {
+      float: right;
+      font-weight: normal;
+      margin:0 0 5px 5px;
+      width: 100px;
+      clear: none;
+  }
+
+.x-customOverStyle {
+    background-color: rgba(0, 255, 0, 0.2);
+    background-image: none;
+    border-color: green;
+}
+.x-customPressedStyle {
+    background-color: rgba(255, 0, 0, 0.2);
+    background-image: none;
+    border-color:  red;
+}
+.header-area {
+	float:left;
+	text-align:left;
+	background:#D5E2F2; 
+	width:700;
+	filter=progid:DXImageTransform.Microsoft.Gradient(GradientType=1, EndColorStr=#AEC7E1, StartColorStr=#FFFFFF);
+	vertical-align: middle;
+	border-bottom: #333333   0px solid;
+	border-left: #333333 0px solid;
+	border-right: #333333 0px solid;
+	border-top: #333333 0px solid;
+}
+.cloud-header-area {
+	/*background:#D5E2F2; */
+}
+
+.header-area-logo {
+		float:right;
+	text-align:center;
+	vertical-align: top;
+	border-bottom: #333333   0px solid;
+	border-left: #333333 0px solid;
+	border-right: #333333 0px solid;
+	border-top: #333333 0px solid;
+	cursor: pointer;
+	margins: 0;
+	background-color: #FFFFFF;
+}
+.header-area-first {
+	width:950;
+	float:left;
+	text-align: left;
+	background: #D5E2F2;
+	vertical-align: middle;
+	border-bottom: #333333 0px solid;
+	border-left: #333333 0px solid;
+	border-right: #333333 0px solid;
+	border-top: #333333 0px solid;
+}
+.header-area-right {
+	width:180;
+	float:right;
+	text-align:right;
+	vertical-align: middle;
+	border-bottom: #333333  0px solid;
+	border-left: #333333 0px solid;
+	border-right: #333333 0px solid;
+	border-top: #333333 0px solid;
+	margin:3px  3px;
+	padding-top:  1px;
+	padding-right:   1px;
+	padding-bottom:   1px;
+}
+.header-area-calendar {
+	float:left;
+	text-align:center;
+	background: red;
+	vertical-align: middle;
+	border-bottom: #333333  0px solid;
+	border-left: #333333 0px solid;
+	border-right: #333333 0px solid;
+	border-top: #333333 0px solid;
+	margin: 0 0 0 0;
+}
+
+
+.selected-row .x-grid-cell { 
+    background-color: #ffe2e2; 
+    color: #900; 
+}
+
+
+.selected-green-row .x-grid-cell{
+	background-color: #82D900; 
+    color: #900; 
+}
+
+
+.readOnly-row .x-grid-cell { 
+    background-color: red; 
+    display: none;
+
+}
+
+
+.my-row .x-grid-cell { 
+    background-color: #FAFFF3; 
+    color: #15180F; 
+}
+
+.editable-row .x-grid-cell { 
+    background-color: #C2DBD1; 
+    color: #333333; 
+}
+
+.yellow-row .x-change-cell { 
+    background-color: #FAFAE1; 
+    color: #15180F;
+}
+
+.green-row .x-change-cell { 
+    background-color: #C9F5AC; 
+    color: #15180F;
+}
+.orange-row .x-change-cell { 
+    background-color: #FBCB8D; 
+    color: #15180F;
+}
+.red-row .x-change-cell { 
+    background-color: #FF9389; 
+    color: #15180F;
+}
+.white-row .x-change-cell { 
+    background-color: #FFFFFF; 
+    color: #15180F; 
+}
+.grey-row .x-change-cell { 
+    background-color: #EAEAEA; 
+    color: #15180F; 
+}
+.blue-row .x-change-cell { 
+    background-color: #7CC5E6; 
+    color: #15180F; 
+}
+.pink-row .x-change-cell { 
+    background-color: #F19FCD; 
+    color: #15180F; 
+}
+.magenta-row .x-change-cell { 
+    background-color: #EC7AEB; 
+    color: #15180F; 
+}
+.cyan-row .x-change-cell { 
+    background-color: #ACF0F0; 
+    color: #15180F; 
+}
+.black-row .x-change-cell { 
+    background-color: #333333; 
+    color: #FFFFFF; 
+}
+
+
+
+.normal-row .x-change-cell { 
+    background-color: #FFFFFF; 
+    color: #15180F; 
+}
+
+/* .x-btn-default-toolbar-small  .x-btn-inner { */
+/* { */
+/* } */
+
+
+.edit-cell {
+   background-color: yellow; 
+   font-weight: bold;
+   color:red;
+}
+
+.edit-cell-important {
+   background-color: yellow; 
+   font-weight: bold;
+   color:#FFB5A8;
+}
+
+
+/* Toolbars */ 
+.mainToolbar .x-toolbar{ 
+    border-color:red; 
+    background:#FFFFFF; 
+    padding:0px; 
+    border-width:0px 0px 0px; 
+} 
+.mainToolbar .x-toolbar button { 
+    color:blue; 
+} 
+.mainToolbar .x-toolbar .x-btn-menu-arrow-wrap .x-btn-center button { 
+    background-image:none; 
+} 
+.mainToolbar .x-toolbar .x-btn-text-icon .x-btn-menu-arrow-wrap .x-btn-center button { 
+    background-image:url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blueblanktab132.jpg); 
+} 
+.mainToolbar .x-toolbar .x-btn-over .x-btn-left{ 
+    background-image:url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blueblanktab132.jpg); 
+} 
+.mainToolbar .x-toolbar .x-btn-over .x-btn-right{ 
+    background-image:url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blueblanktab132.jpg); 
+} 
+.mainToolbar .x-toolbar .x-btn-over .x-btn-center{ 
+    background-image:url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blueblanktab132.jpg); 
+} 
+.mainToolbar .x-toolbar .x-btn-over button { 
+    color:green; 
+} 
+.mainToolbar .x-toolbar .x-btn-click .x-btn-left, .x-toolbar .x-btn-pressed .x-btn-left, .x-toolbar .x-btn-menu-active .x-btn-left{ 
+    background-image:none; 
+} 
+.mainToolbar .x-toolbar .x-btn-click .x-btn-right, .x-toolbar .x-btn-pressed .x-btn-right, .x-toolbar .x-btn-menu-active .x-btn-right{ 
+    background-image:none; 
+} 
+
+
+.mainToolbar .x-toolbar .x-btn-click .x-btn-center, .x-toolbar .x-btn-pressed .x-btn-center, .x-toolbar .x-btn-menu-active .x-btn-center{ 
+    background-image:none; 
+} 
+.mainToolbar .x-toolbar .ytb-sep { 
+    background-image:none; 
+} 
+.mainToolbar .x-paging-info, .ytb-text { 
+        color:black; 
+} 
+.mainToolbar .x-toolbar .x-btn-menu-active .x-btn-with-menu .x-btn-left{ 
+        background-image:none; 
+} 
+.mainToolbar .x-toolbar .x-btn-menu-active .x-btn-with-menu .x-btn-right{ 
+        background-image:none; 
+} 
+.mainToolbar .x-toolbar .x-btn-menu-active .x-btn-with-menu .x-btn-center{ 
+        background-image:none; 
+}
+
+	
+/*
+.a-form-num-field
+{
+text-align: right;
+color: black;
+font: 12px tahoma,arial,verdana,sans-serif;
+margin: 0;
+}
+
+.x-form-num-field {
+    text-align: right;
+}
+*/
+/* Toolbars */ 
+
+/*
+.x-ric-generic .x-btn-text {  
+    background-image:none; 
+    width:    132px; 
+    height:    21px; 
+    padding-bottom:0px; 
+} 
+.ric-btn-over { 
+    background-image: url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blueblanktab132.jpg); 
+     
+} 
+.x-btn-text-icon .x-btn-center .x-btn-text{ 
+    background-image: url(http://lt-car-dev06.bridge-point.com/newcdc_tools/images/blanktab132.jpg); 
+    background-position: 0 0px; 
+    background-repeat: no-repeat; 
+    padding-left:0px; 
+    padding-top:3px; 
+    padding-bottom:0px; 
+        padding-right:0; 
+        width: 132px; 
+} 
+
+.x-btn-with-menu  .x-btn-center em { 
+        display:block; 
+        background:none; 
+    padding-right:0px; 
+} 
+
+.x-btn-text-icon .x-btn-with-menu .x-btn-center em { 
+        display:block; 
+        background:none; 
+    padding-right:0px; 
+} 
+.x-btn-right{ 
+    width:0px; 
+    height:21px; 
+    background:none; 
+} 
+.x-btn-left i, .x-btn-right i{ 
+    display:block; 
+        width:0px; 
+        overflow:hidden; 
+        font-size:1px; 
+        line-height:1px; 
+} 
+.x-btn-left{ 
+    width:0px; 
+    height:21px; 
+    background:none; 
+} 
+*/
+/*Menu Items*/
+/*
+.x-menu { 
+    background-image:none!important; 
+} 
+.x-menu-item-icon{ 
+    display:none!important; 
+} 
+.x-menu { 
+    border: 1px solid #718bb7; 
+    z-index: 15000; 
+    zoom: 1; 
+    background: #f2f2f2; 
+    padding: 1px; 
+    background-image:none!important; 
+} 
+.x-menu-list-item{ 
+    font:normal 11px Verdana,arial, sans-serif; 
+        white-space: nowrap; 
+        -moz-user-select: none; 
+    -khtml-user-select: none; 
+    display:block; 
+    padding:1px; 
+    border-bottom: 1px solid #A7B3C4; 
+     
+} 
+.x-menu-item-active { 
+    background: #5386c8; 
+    border:1px solid #aaccf6; 
+    padding: 1px; 
+} 
+.x-menu-item-active a.x-menu-item { 
+    color: #ffffff; 
+}  
+*/
+
+
+/*
+Tree in EPC3
+*/
+
+#usersTreePanel .demo-userNode .x-grid-cell-inner {
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.demo-userNodeIcon {
+    height: 25px;
+    width: 25px;
+}
+
+.mylabel {
+    font: normal 10px courier !important;
+}
+
+.nationCombo {
+	text-align:left;
+	font-size: 11px;
+	overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+
+.flagAF{ background-image:url(../../extjs5/module/shared/icons/flag/16/AF.png) !important; }
+.flagAL{ background-image:url(../../extjs5/module/shared/icons/flag/16/AL.png) !important; }
+.flagDZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/DZ.png) !important; }
+.flagAS{ background-image:url(../../extjs5/module/shared/icons/flag/16/AS.png) !important; }
+.flagAD{ background-image:url(../../extjs5/module/shared/icons/flag/16/AD.png) !important; }
+.flagAO{ background-image:url(../../extjs5/module/shared/icons/flag/16/AO.png) !important; }
+.flagAI{ background-image:url(../../extjs5/module/shared/icons/flag/16/AI.png) !important; }
+.flagAQ{ background-image:url(../../extjs5/module/shared/icons/flag/16/AQ.png) !important; }
+.flagAG{ background-image:url(../../extjs5/module/shared/icons/flag/16/AG.png) !important; }
+.flagAR{ background-image:url(../../extjs5/module/shared/icons/flag/16/AR.png) !important; }
+.flagAM{ background-image:url(../../extjs5/module/shared/icons/flag/16/AM.png) !important; }
+.flagAW{ background-image:url(../../extjs5/module/shared/icons/flag/16/AW.png) !important; }
+.flagAC{ background-image:url(../../extjs5/module/shared/icons/flag/16/AC.png) !important; }
+.flagAT{ background-image:url(../../extjs5/module/shared/icons/flag/16/AT.png) !important; }
+.flagAU{ background-image:url(../../extjs5/module/shared/icons/flag/16/AU.png) !important; }
+.flagAZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/AZ.png) !important; }
+.flagBS{ background-image:url(../../extjs5/module/shared/icons/flag/16/BS.png) !important; }
+.flagBH{ background-image:url(../../extjs5/module/shared/icons/flag/16/BH.png) !important; }
+.flagBD{ background-image:url(../../extjs5/module/shared/icons/flag/16/BD.png) !important; }
+.flagBB{ background-image:url(../../extjs5/module/shared/icons/flag/16/BB.png) !important; }
+.flagBY{ background-image:url(../../extjs5/module/shared/icons/flag/16/BY.png) !important; }
+.flagBE{ background-image:url(../../extjs5/module/shared/icons/flag/16/BE.png) !important; }
+.flagBZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/BZ.png) !important; }
+.flagBJ{ background-image:url(../../extjs5/module/shared/icons/flag/16/BJ.png) !important; }
+.flagBM{ background-image:url(../../extjs5/module/shared/icons/flag/16/BM.png) !important; }
+.flagBT{ background-image:url(../../extjs5/module/shared/icons/flag/16/BT.png) !important; }
+.flagBO{ background-image:url(../../extjs5/module/shared/icons/flag/16/BO.png) !important; }
+.flagBA{ background-image:url(../../extjs5/module/shared/icons/flag/16/BA.png) !important; }
+.flagBW{ background-image:url(../../extjs5/module/shared/icons/flag/16/BW.png) !important; }
+.flagBV{ background-image:url(../../extjs5/module/shared/icons/flag/16/BV.png) !important; }
+.flagBR{ background-image:url(../../extjs5/module/shared/icons/flag/16/BR.png) !important; }
+.flagIO{ background-image:url(../../extjs5/module/shared/icons/flag/16/IO.png) !important; }
+.flagBN{ background-image:url(../../extjs5/module/shared/icons/flag/16/BN.png) !important; }
+.flagBG{ background-image:url(../../extjs5/module/shared/icons/flag/16/BG.png) !important; }
+.flagBF{ background-image:url(../../extjs5/module/shared/icons/flag/16/BF.png) !important; }
+.flagBI{ background-image:url(../../extjs5/module/shared/icons/flag/16/BI.png) !important; }
+.flagKH{ background-image:url(../../extjs5/module/shared/icons/flag/16/KH.png) !important; }
+.flagCM{ background-image:url(../../extjs5/module/shared/icons/flag/16/CM.png) !important; }
+.flagCA{ background-image:url(../../extjs5/module/shared/icons/flag/16/CA.png) !important; }
+.flagCV{ background-image:url(../../extjs5/module/shared/icons/flag/16/CV.png) !important; }
+.flagKY{ background-image:url(../../extjs5/module/shared/icons/flag/16/KY.png) !important; }
+.flagCF{ background-image:url(../../extjs5/module/shared/icons/flag/16/CF.png) !important; }
+.flagTD{ background-image:url(../../extjs5/module/shared/icons/flag/16/TD.png) !important; }
+.flagGG{ background-image:url(../../extjs5/module/shared/icons/flag/16/GG.png) !important; }
+.flagJE{ background-image:url(../../extjs5/module/shared/icons/flag/16/JE.png) !important; }
+.flagCL{ background-image:url(../../extjs5/module/shared/icons/flag/16/CL.png) !important; }
+.flagCN{ background-image:url(../../extjs5/module/shared/icons/flag/16/CN.png) !important; }
+.flagCX{ background-image:url(../../extjs5/module/shared/icons/flag/16/CX.png) !important; }
+.flagCC{ background-image:url(../../extjs5/module/shared/icons/flag/16/CC.png) !important; }
+.flagCO{ background-image:url(../../extjs5/module/shared/icons/flag/16/CO.png) !important; }
+.flagKM{ background-image:url(../../extjs5/module/shared/icons/flag/16/KM.png) !important; }
+.flagCG{ background-image:url(../../extjs5/module/shared/icons/flag/16/CG.png) !important; }
+.flagCK{ background-image:url(../../extjs5/module/shared/icons/flag/16/CK.png) !important; }
+.flagCR{ background-image:url(../../extjs5/module/shared/icons/flag/16/CR.png) !important; }
+.flagCI{ background-image:url(../../extjs5/module/shared/icons/flag/16/CI.png) !important; }
+.flagHR{ background-image:url(../../extjs5/module/shared/icons/flag/16/HR.png) !important; }
+.flagCU{ background-image:url(../../extjs5/module/shared/icons/flag/16/CU.png) !important; }
+.flagCY{ background-image:url(../../extjs5/module/shared/icons/flag/16/CY.png) !important; }
+.flagCZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/CZ.png) !important; }
+.flagDK{ background-image:url(../../extjs5/module/shared/icons/flag/16/DK.png) !important; }
+.flagDJ{ background-image:url(../../extjs5/module/shared/icons/flag/16/DJ.png) !important; }
+.flagDM{ background-image:url(../../extjs5/module/shared/icons/flag/16/DM.png) !important; }
+.flagDO{ background-image:url(../../extjs5/module/shared/icons/flag/16/DO.png) !important; }
+.flagTP{ background-image:url(../../extjs5/module/shared/icons/flag/16/TP.png) !important; }
+.flagEC{ background-image:url(../../extjs5/module/shared/icons/flag/16/EC.png) !important; }
+.flagEG{ background-image:url(../../extjs5/module/shared/icons/flag/16/EG.png) !important; }
+.flagSV{ background-image:url(../../extjs5/module/shared/icons/flag/16/SV.png) !important; }
+.flagGQ{ background-image:url(../../extjs5/module/shared/icons/flag/16/GQ.png) !important; }
+.flagER{ background-image:url(../../extjs5/module/shared/icons/flag/16/ER.png) !important; }
+.flagEE{ background-image:url(../../extjs5/module/shared/icons/flag/16/EE.png) !important; }
+.flagET{ background-image:url(../../extjs5/module/shared/icons/flag/16/ET.png) !important; }
+.flagFK{ background-image:url(../../extjs5/module/shared/icons/flag/16/FK.png) !important; }
+.flagFO{ background-image:url(../../extjs5/module/shared/icons/flag/16/FO.png) !important; }
+.flagFJ{ background-image:url(../../extjs5/module/shared/icons/flag/16/FJ.png) !important; }
+.flagFI{ background-image:url(../../extjs5/module/shared/icons/flag/16/FI.png) !important; }
+.flagFR{ background-image:url(../../extjs5/module/shared/icons/flag/16/FR.png) !important; }
+.flagFX{ background-image:url(../../extjs5/module/shared/icons/flag/16/FX.png) !important; }
+.flagGF{ background-image:url(../../extjs5/module/shared/icons/flag/16/GF.png) !important; }
+.flagPF{ background-image:url(../../extjs5/module/shared/icons/flag/16/PF.png) !important; }
+.flagTF{ background-image:url(../../extjs5/module/shared/icons/flag/16/TF.png) !important; }
+.flagGA{ background-image:url(../../extjs5/module/shared/icons/flag/16/GA.png) !important; }
+.flagGM{ background-image:url(../../extjs5/module/shared/icons/flag/16/GM.png) !important; }
+.flagGE{ background-image:url(../../extjs5/module/shared/icons/flag/16/GE.png) !important; }
+.flagDE{ background-image:url(../../extjs5/module/shared/icons/flag/16/DE.png) !important; }
+.flagGH{ background-image:url(../../extjs5/module/shared/icons/flag/16/GH.png) !important; }
+.flagGI{ background-image:url(../../extjs5/module/shared/icons/flag/16/GI.png) !important; }
+.flagGR{ background-image:url(../../extjs5/module/shared/icons/flag/16/GR.png) !important; }
+.flagGL{ background-image:url(../../extjs5/module/shared/icons/flag/16/GL.png) !important; }
+.flagGD{ background-image:url(../../extjs5/module/shared/icons/flag/16/GD.png) !important; }
+.flagGP{ background-image:url(../../extjs5/module/shared/icons/flag/16/GP.png) !important; }
+.flagGU{ background-image:url(../../extjs5/module/shared/icons/flag/16/GU.png) !important; }
+.flagGT{ background-image:url(../../extjs5/module/shared/icons/flag/16/GT.png) !important; }
+.flagGN{ background-image:url(../../extjs5/module/shared/icons/flag/16/GN.png) !important; }
+.flagGW{ background-image:url(../../extjs5/module/shared/icons/flag/16/GW.png) !important; }
+.flagGY{ background-image:url(../../extjs5/module/shared/icons/flag/16/GY.png) !important; }
+.flagHT{ background-image:url(../../extjs5/module/shared/icons/flag/16/HT.png) !important; }
+.flagHM{ background-image:url(../../extjs5/module/shared/icons/flag/16/HM.png) !important; }
+.flagHN{ background-image:url(../../extjs5/module/shared/icons/flag/16/HN.png) !important; }
+.flagHK{ background-image:url(../../extjs5/module/shared/icons/flag/16/HK.png) !important; }
+.flagHU{ background-image:url(../../extjs5/module/shared/icons/flag/16/HU.png) !important; }
+.flagIS{ background-image:url(../../extjs5/module/shared/icons/flag/16/IS.png) !important; }
+.flagIN{ background-image:url(../../extjs5/module/shared/icons/flag/16/IN.png) !important; }
+.flagID{ background-image:url(../../extjs5/module/shared/icons/flag/16/ID.png) !important; }
+.flagIR{ background-image:url(../../extjs5/module/shared/icons/flag/16/IR.png) !important; }
+.flagIQ{ background-image:url(../../extjs5/module/shared/icons/flag/16/IQ.png) !important; }
+.flagIE{ background-image:url(../../extjs5/module/shared/icons/flag/16/IE.png) !important; }
+.flagIM{ background-image:url(../../extjs5/module/shared/icons/flag/16/IM.png) !important; }
+.flagIL{ background-image:url(../../extjs5/module/shared/icons/flag/16/IL.png) !important; }
+.flagIT{ background-image:url(../../extjs5/module/shared/icons/flag/16/IT.png) !important; }
+.flagJM{ background-image:url(../../extjs5/module/shared/icons/flag/16/JM.png) !important; }
+.flagJP{ background-image:url(../../extjs5/module/shared/icons/flag/16/JP.png) !important; }
+.flagJO{ background-image:url(../../extjs5/module/shared/icons/flag/16/JO.png) !important; }
+.flagKZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/KZ.png) !important; }
+.flagKE{ background-image:url(../../extjs5/module/shared/icons/flag/16/KE.png) !important; }
+.flagKI{ background-image:url(../../extjs5/module/shared/icons/flag/16/KI.png) !important; }
+.flagKP{ background-image:url(../../extjs5/module/shared/icons/flag/16/KP.png) !important; }
+.flagKR{ background-image:url(../../extjs5/module/shared/icons/flag/16/KR.png) !important; }
+.flagKW{ background-image:url(../../extjs5/module/shared/icons/flag/16/KW.png) !important; }
+.flagKG{ background-image:url(../../extjs5/module/shared/icons/flag/16/KG.png) !important; }
+.flagLA{ background-image:url(../../extjs5/module/shared/icons/flag/16/LA.png) !important; }
+.flagLV{ background-image:url(../../extjs5/module/shared/icons/flag/16/LV.png) !important; }
+.flagLB{ background-image:url(../../extjs5/module/shared/icons/flag/16/LB.png) !important; }
+.flagLS{ background-image:url(../../extjs5/module/shared/icons/flag/16/LS.png) !important; }
+.flagLR{ background-image:url(../../extjs5/module/shared/icons/flag/16/LR.png) !important; }
+.flagLY{ background-image:url(../../extjs5/module/shared/icons/flag/16/LY.png) !important; }
+.flagLI{ background-image:url(../../extjs5/module/shared/icons/flag/16/LI.png) !important; }
+.flagLT{ background-image:url(../../extjs5/module/shared/icons/flag/16/LT.png) !important; }
+.flagLU{ background-image:url(../../extjs5/module/shared/icons/flag/16/LU.png) !important; }
+.flagMO{ background-image:url(../../extjs5/module/shared/icons/flag/16/MO.png) !important; }
+.flagMK{ background-image:url(../../extjs5/module/shared/icons/flag/16/MK.png) !important; }
+.flagMG{ background-image:url(../../extjs5/module/shared/icons/flag/16/MG.png) !important; }
+.flagMW{ background-image:url(../../extjs5/module/shared/icons/flag/16/MW.png) !important; }
+.flagMY{ background-image:url(../../extjs5/module/shared/icons/flag/16/MY.png) !important; }
+.flagML{ background-image:url(../../extjs5/module/shared/icons/flag/16/ML.png) !important; }
+.flagMT{ background-image:url(../../extjs5/module/shared/icons/flag/16/MT.png) !important; }
+.flagMH{ background-image:url(../../extjs5/module/shared/icons/flag/16/MH.png) !important; }
+.flagMQ{ background-image:url(../../extjs5/module/shared/icons/flag/16/MQ.png) !important; }
+.flagMR{ background-image:url(../../extjs5/module/shared/icons/flag/16/MR.png) !important; }
+.flagMU{ background-image:url(../../extjs5/module/shared/icons/flag/16/MU.png) !important; }
+.flagMV{ background-image:url(../../extjs5/module/shared/icons/flag/16/MV.png) !important; }
+.flagYT{ background-image:url(../../extjs5/module/shared/icons/flag/16/YT.png) !important; }
+.flagMX{ background-image:url(../../extjs5/module/shared/icons/flag/16/MX.png) !important; }
+.flagFM{ background-image:url(../../extjs5/module/shared/icons/flag/16/FM.png) !important; }
+.flagMD{ background-image:url(../../extjs5/module/shared/icons/flag/16/MD.png) !important; }
+.flagMC{ background-image:url(../../extjs5/module/shared/icons/flag/16/MC.png) !important; }
+.flagMN{ background-image:url(../../extjs5/module/shared/icons/flag/16/MN.png) !important; }
+.flagMS{ background-image:url(../../extjs5/module/shared/icons/flag/16/MS.png) !important; }
+.flagMA{ background-image:url(../../extjs5/module/shared/icons/flag/16/MA.png) !important; }
+.flagMZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/MZ.png) !important; }
+.flagMM{ background-image:url(../../extjs5/module/shared/icons/flag/16/MM.png) !important; }
+.flagNA{ background-image:url(../../extjs5/module/shared/icons/flag/16/NA.png) !important; }
+.flagNR{ background-image:url(../../extjs5/module/shared/icons/flag/16/NR.png) !important; }
+.flagNP{ background-image:url(../../extjs5/module/shared/icons/flag/16/NP.png) !important; }
+.flagNL{ background-image:url(../../extjs5/module/shared/icons/flag/16/NL.png) !important; }
+.flagAN{ background-image:url(../../extjs5/module/shared/icons/flag/16/AN.png) !important; }
+.flagNC{ background-image:url(../../extjs5/module/shared/icons/flag/16/NC.png) !important; }
+.flagNZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/NZ.png) !important; }
+.flagNI{ background-image:url(../../extjs5/module/shared/icons/flag/16/NI.png) !important; }
+.flagNE{ background-image:url(../../extjs5/module/shared/icons/flag/16/NE.png) !important; }
+.flagNG{ background-image:url(../../extjs5/module/shared/icons/flag/16/NG.png) !important; }
+.flagNU{ background-image:url(../../extjs5/module/shared/icons/flag/16/NU.png) !important; }
+.flagNF{ background-image:url(../../extjs5/module/shared/icons/flag/16/NF.png) !important; }
+.flagMP{ background-image:url(../../extjs5/module/shared/icons/flag/16/MP.png) !important; }
+.flagNO{ background-image:url(../../extjs5/module/shared/icons/flag/16/NO.png) !important; }
+.flagOM{ background-image:url(../../extjs5/module/shared/icons/flag/16/OM.png) !important; }
+.flagPK{ background-image:url(../../extjs5/module/shared/icons/flag/16/PK.png) !important; }
+.flagPW{ background-image:url(../../extjs5/module/shared/icons/flag/16/PW.png) !important; }
+.flagPA{ background-image:url(../../extjs5/module/shared/icons/flag/16/PA.png) !important; }
+.flagPG{ background-image:url(../../extjs5/module/shared/icons/flag/16/PG.png) !important; }
+.flagPY{ background-image:url(../../extjs5/module/shared/icons/flag/16/PY.png) !important; }
+.flagPE{ background-image:url(../../extjs5/module/shared/icons/flag/16/PE.png) !important; }
+.flagPH{ background-image:url(../../extjs5/module/shared/icons/flag/16/PH.png) !important; }
+.flagPN{ background-image:url(../../extjs5/module/shared/icons/flag/16/PN.png) !important; }
+.flagPL{ background-image:url(../../extjs5/module/shared/icons/flag/16/PL.png) !important; }
+.flagPT{ background-image:url(../../extjs5/module/shared/icons/flag/16/PT.png) !important; }
+.flagPR{ background-image:url(../../extjs5/module/shared/icons/flag/16/PR.png) !important; }
+.flagQA{ background-image:url(../../extjs5/module/shared/icons/flag/16/QA.png) !important; }
+.flagRE{ background-image:url(../../extjs5/module/shared/icons/flag/16/RE.png) !important; }
+.flagRO{ background-image:url(../../extjs5/module/shared/icons/flag/16/RO.png) !important; }
+.flagRU{ background-image:url(../../extjs5/module/shared/icons/flag/16/RU.png) !important; }
+.flagRW{ background-image:url(../../extjs5/module/shared/icons/flag/16/RW.png) !important; }
+.flagKN{ background-image:url(../../extjs5/module/shared/icons/flag/16/KN.png) !important; }
+.flagLC{ background-image:url(../../extjs5/module/shared/icons/flag/16/LC.png) !important; }
+.flagVC{ background-image:url(../../extjs5/module/shared/icons/flag/16/VC.png) !important; }
+.flagWS{ background-image:url(../../extjs5/module/shared/icons/flag/16/WS.png) !important; }
+.flagSM{ background-image:url(../../extjs5/module/shared/icons/flag/16/SM.png) !important; }
+.flagST{ background-image:url(../../extjs5/module/shared/icons/flag/16/ST.png) !important; }
+.flagSA{ background-image:url(../../extjs5/module/shared/icons/flag/16/SA.png) !important; }
+.flagSN{ background-image:url(../../extjs5/module/shared/icons/flag/16/SN.png) !important; }
+.flagSC{ background-image:url(../../extjs5/module/shared/icons/flag/16/SC.png) !important; }
+.flagSL{ background-image:url(../../extjs5/module/shared/icons/flag/16/SL.png) !important; }
+.flagSG{ background-image:url(../../extjs5/module/shared/icons/flag/16/SG.png) !important; }
+.flagSK{ background-image:url(../../extjs5/module/shared/icons/flag/16/SK.png) !important; }
+.flagSI{ background-image:url(../../extjs5/module/shared/icons/flag/16/SI.png) !important; }
+.flagSB{ background-image:url(../../extjs5/module/shared/icons/flag/16/SB.png) !important; }
+.flagSO{ background-image:url(../../extjs5/module/shared/icons/flag/16/SO.png) !important; }
+.flagZA{ background-image:url(../../extjs5/module/shared/icons/flag/16/ZA.png) !important; }
+.flagGS{ background-image:url(../../extjs5/module/shared/icons/flag/16/GS.png) !important; }
+.flagES{ background-image:url(../../extjs5/module/shared/icons/flag/16/ES.png) !important; }
+.flagLK{ background-image:url(../../extjs5/module/shared/icons/flag/16/LK.png) !important; }
+.flagSH{ background-image:url(../../extjs5/module/shared/icons/flag/16/SH.png) !important; }
+.flagPM{ background-image:url(../../extjs5/module/shared/icons/flag/16/PM.png) !important; }
+.flagSD{ background-image:url(../../extjs5/module/shared/icons/flag/16/SD.png) !important; }
+.flagSR{ background-image:url(../../extjs5/module/shared/icons/flag/16/SR.png) !important; }
+.flagSJ{ background-image:url(../../extjs5/module/shared/icons/flag/16/SJ.png) !important; }
+.flagSZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/SZ.png) !important; }
+.flagSE{ background-image:url(../../extjs5/module/shared/icons/flag/16/SE.png) !important; }
+.flagCH{ background-image:url(../../extjs5/module/shared/icons/flag/16/CH.png) !important; }
+.flagSY{ background-image:url(../../extjs5/module/shared/icons/flag/16/SY.png) !important; }
+.flagTW{ background-image:url(../../extjs5/module/shared/icons/flag/16/TW.png) !important; }
+.flagTJ{ background-image:url(../../extjs5/module/shared/icons/flag/16/TJ.png) !important; }
+.flagTZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/TZ.png) !important; }
+.flagTH{ background-image:url(../../extjs5/module/shared/icons/flag/16/TH.png) !important; }
+.flagTG{ background-image:url(../../extjs5/module/shared/icons/flag/16/TG.png) !important; }
+.flagTK{ background-image:url(../../extjs5/module/shared/icons/flag/16/TK.png) !important; }
+.flagTO{ background-image:url(../../extjs5/module/shared/icons/flag/16/TO.png) !important; }
+.flagTT{ background-image:url(../../extjs5/module/shared/icons/flag/16/TT.png) !important; }
+.flagTN{ background-image:url(../../extjs5/module/shared/icons/flag/16/TN.png) !important; }
+.flagTR{ background-image:url(../../extjs5/module/shared/icons/flag/16/TR.png) !important; }
+.flagTM{ background-image:url(../../extjs5/module/shared/icons/flag/16/TM.png) !important; }
+.flagTC{ background-image:url(../../extjs5/module/shared/icons/flag/16/TC.png) !important; }
+.flagTV{ background-image:url(../../extjs5/module/shared/icons/flag/16/TV.png) !important; }
+.flagUG{ background-image:url(../../extjs5/module/shared/icons/flag/16/UG.png) !important; }
+.flagUA{ background-image:url(../../extjs5/module/shared/icons/flag/16/UA.png) !important; }
+.flagAE{ background-image:url(../../extjs5/module/shared/icons/flag/16/AE.png) !important; }
+.flagUK{ background-image:url(../../extjs5/module/shared/icons/flag/16/UK.png) !important; }
+.flagUS{ background-image:url(../../extjs5/module/shared/icons/flag/16/US.png) !important; }
+.flagUM{ background-image:url(../../extjs5/module/shared/icons/flag/16/UM.png) !important; }
+.flagUY{ background-image:url(../../extjs5/module/shared/icons/flag/16/UY.png) !important; }
+.flagUZ{ background-image:url(../../extjs5/module/shared/icons/flag/16/UZ.png) !important; }
+.flagVU{ background-image:url(../../extjs5/module/shared/icons/flag/16/VU.png) !important; }
+.flagVA{ background-image:url(../../extjs5/module/shared/icons/flag/16/VA.png) !important; }
+.flagVE{ background-image:url(../../extjs5/module/shared/icons/flag/16/VE.png) !important; }
+.flagVN{ background-image:url(../../extjs5/module/shared/icons/flag/16/VN.png) !important; }
+.flagVG{ background-image:url(../../extjs5/module/shared/icons/flag/16/VG.png) !important; }
+.flagVI{ background-image:url(../../extjs5/module/shared/icons/flag/16/VI.png) !important; }
+.flagWF{ background-image:url(../../extjs5/module/shared/icons/flag/16/WF.png) !important; }
+.flagEH{ background-image:url(../../extjs5/module/shared/icons/flag/16/EH.png) !important; }
+.flagYE{ background-image:url(../../extjs5/module/shared/icons/flag/16/YE.png) !important; }
+.flagYU{ background-image:url(../../extjs5/module/shared/icons/flag/16/YU.png) !important; }
+.flagZR{ background-image:url(../../extjs5/module/shared/icons/flag/16/ZR.png) !important; }
+.flagZM{ background-image:url(../../extjs5/module/shared/icons/flag/16/ZM.png) !important; }
+.flagZW{ background-image:url(../../extjs5/module/shared/icons/flag/16/ZW.png) !important; }
+
+/*file types*/
+.ficon_aac { background-image:url(../../extjs5/module/shared/icons/file/aac.png) !important; }
+.ficon_ai { background-image:url(../../extjs5/module/shared/icons/file/ai.png) !important; }
+.ficon_aiff { background-image:url(../../extjs5/module/shared/icons/file/aiff.png) !important; }
+.ficon_avi { background-image:url(../../extjs5/module/shared/icons/file/avi.png) !important; }
+.ficon_bmp { background-image:url(../../extjs5/module/shared/icons/file/bmp.png) !important; }
+.ficon_c { background-image:url(../../extjs5/module/shared/icons/file/c.png) !important; }
+.ficon_cpp { background-image:url(../../extjs5/module/shared/icons/file/cpp.png) !important; }
+.ficon_css { background-image:url(../../extjs5/module/shared/icons/file/css.png) !important; }
+.ficon_dat { background-image:url(../../extjs5/module/shared/icons/file/dat.png) !important; }
+.ficon_dmg { background-image:url(../../extjs5/module/shared/icons/file/dmg.png) !important; }
+.ficon_doc { background-image:url(../../extjs5/module/shared/icons/file/doc.png) !important; }
+.ficon_dotx { background-image:url(../../extjs5/module/shared/icons/file/dotx.png) !important; }
+.ficon_dwg { background-image:url(../../extjs5/module/shared/icons/file/dwg.png) !important; }
+.ficon_dxf { background-image:url(../../extjs5/module/shared/icons/file/dxf.png) !important; }
+.ficon_eps { background-image:url(../../extjs5/module/shared/icons/file/eps.png) !important; }
+.ficon_exe { background-image:url(../../extjs5/module/shared/icons/file/exe.png) !important; }
+.ficon_flv { background-image:url(../../extjs5/module/shared/icons/file/flv.png) !important; }
+.ficon_gif { background-image:url(../../extjs5/module/shared/icons/file/gif.png) !important; }
+.ficon_h { background-image:url(../../extjs5/module/shared/icons/file/h.png) !important; }
+.ficon_hpp { background-image:url(../../extjs5/module/shared/icons/file/hpp.png) !important; }
+.ficon_html { background-image:url(../../extjs5/module/shared/icons/file/html.png) !important; }
+.ficon_ics { background-image:url(../../extjs5/module/shared/icons/file/ics.png) !important; }
+.ficon_iso { background-image:url(../../extjs5/module/shared/icons/file/iso.png) !important; }
+.ficon_java { background-image:url(../../extjs5/module/shared/icons/file/java.png) !important; }
+.ficon_jpg { background-image:url(../../extjs5/module/shared/icons/file/jpg.png) !important; }
+.ficon_key { background-image:url(../../extjs5/module/shared/icons/file/key.png) !important; }
+.ficon_mid { background-image:url(../../extjs5/module/shared/icons/file/mid.png) !important; }
+.ficon_mp3 { background-image:url(../../extjs5/module/shared/icons/file/mp3.png) !important; }
+.ficon_mp4 { background-image:url(../../extjs5/module/shared/icons/file/mp4.png) !important; }
+.ficon_mpg { background-image:url(../../extjs5/module/shared/icons/file/mpg.png) !important; }
+.ficon_odf { background-image:url(../../extjs5/module/shared/icons/file/odf.png) !important; }
+.ficon_ods { background-image:url(../../extjs5/module/shared/icons/file/ods.png) !important; }
+.ficon_odt { background-image:url(../../extjs5/module/shared/icons/file/odt.png) !important; }
+.ficon_otp { background-image:url(../../extjs5/module/shared/icons/file/otp.png) !important; }
+.ficon_ots { background-image:url(../../extjs5/module/shared/icons/file/ots.png) !important; }
+.ficon_ott { background-image:url(../../extjs5/module/shared/icons/file/ott.png) !important; }
+.ficon_pdf { background-image:url(../../extjs5/module/shared/icons/file/pdf.png) !important; }
+.ficon_php { background-image:url(../../extjs5/module/shared/icons/file/php.png) !important; }
+.ficon_png { background-image:url(../../extjs5/module/shared/icons/file/png.png) !important; }
+.ficon_ppt { background-image:url(../../extjs5/module/shared/icons/file/ppt.png) !important; }
+.ficon_psd { background-image:url(../../extjs5/module/shared/icons/file/psd.png) !important; }
+.ficon_py { background-image:url(../../extjs5/module/shared/icons/file/py.png) !important; }
+.ficon_qt { background-image:url(../../extjs5/module/shared/icons/file/qt.png) !important; }
+.ficon_rar { background-image:url(../../extjs5/module/shared/icons/file/rar.png) !important; }
+.ficon_rb { background-image:url(../../extjs5/module/shared/icons/file/rb.png) !important; }
+.ficon_rtf { background-image:url(../../extjs5/module/shared/icons/file/rtf.png) !important; }
+.ficon_sql { background-image:url(../../extjs5/module/shared/icons/file/sql.png) !important; }
+.ficon_tga { background-image:url(../../extjs5/module/shared/icons/file/tga.png) !important; }
+.ficon_tgz { background-image:url(../../extjs5/module/shared/icons/file/tgz.png) !important; }
+.ficon_tiff { background-image:url(../../extjs5/module/shared/icons/file/tiff.png) !important; }
+.ficon_txt { background-image:url(../../extjs5/module/shared/icons/file/txt.png) !important; }
+.ficon_wav { background-image:url(../../extjs5/module/shared/icons/file/wav.png) !important; }
+.ficon_xls { background-image:url(../../extjs5/module/shared/icons/file/xls.png) !important; }
+.ficon_xlsx { background-image:url(../../extjs5/module/shared/icons/file/xlsx.png) !important; }
+.ficon_xml { background-image:url(../../extjs5/module/shared/icons/file/xml.png) !important; }
+.ficon_yml { background-image:url(../../extjs5/module/shared/icons/file/yml.png) !important; }
+.ficon_zip { background-image:url(../../extjs5/module/shared/icons/file/zip.png) !important; }
+
+
+
+/* .search-item { */
+/*     padding: 5px 10px; */
+/*     white-space: normal; */
+/*     color: #555; */
+/*     text-decoration: none; */
+/*     display: block; */
+/*     overflow: hidden; */
+/* } */
+
+/* .search-item h3 { */
+/*     display: block; */
+/*     font: inherit; */
+/*     font-weight: bold; */
+/*     color: #222; */
+/* } */
+
+/* .search-item h3 span { */
+/*     float: right; */
+/*     font-weight: normal; */
+/*     margin:0 0 5px 5px; */
+/*     width: 100px; */
+/*     clear: none; */
+/* } */
+

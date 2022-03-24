@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+a, abbr, acronym, address, 
+b, blockquote, big, body,
+center, caption, cite, code, command,
+ dd, del, dfn, dl, div, dt, 
+em, embed,
+fieldset, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img,
+label, legend, li, 
+object, ol,
+p, pre, 
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, 
+u, ul, input
+var {margin:0; padding:0}
+h1,h2,h3,h4,h5,h6 {font-size:100% }
+ol, ul {list-style:none}
+/* table {border-collapse:collapse; border-spacing:0} */
+table {border-spacing:0}
+fieldset, img {border:0}
+img, input, button, select, textarea {vertical-align:middle; }
+/* input {height:22px;} */
+caption, th {text-align:left }
+
+/*--------------------------------------------------------*/
+
+body{font-size:12px; font-family:"맑은 고딕"; width:100%; color:#444343}
+
+.inputwidth{width:100px; margin:0 5px}
+.imgmargin{margin-right:5px}
+#head{text-align:center; background:#4693b9; font-weight:bold; color:#fff; height:28px}
+#head th {text-align:center;}
+.textcenter{text-align:center; height:25px}
+.textright{text-align:right; height:60px}
+.textleft{text-align:left; height:60px; float:left;}
+#period{text-indent:10px; height:45px}
+select{width:130px; margin:1px 0}
+.center_bg{text-align:center; background:#edf9fc; height:28px}
+#rhms{position:relative; width:130px; top:6px; float:right}
+#none{border:none !important}
+#scroll{overflow-y:scroll; width:99%; height:111px; overflow-x:hidden}
+
+#tab_A, #tab_B{width:100%; position:relative; float:left}
+#tab_B{top:20px}
+#tab_A ul, #tab_B ul{position:relative; left:20px; display:block; width:30%; float:left}
+#tab_A ul li, #tab_B ul li{float:left}
+#tab_boxA, #tab_boxB{float:left; width:98%}
+
+#box_A, #box_B{border:1px solid #9aafb4; width:99%; height:275px; float:left; position:relative; top:-1px; z-index:-10}
+
+#box_C{width:99%; height:28px; float:left; margin-bottom:5px; border:1px dashed #9aafb4}
+#box_C ul li{margin:2px 0 0 13px}
+
+
+#table_A, #table_B{margin:15px 15px 0 15px; float:left}
+#table_C{float:left; margin-left:15px}
+#table_A tr td, #table_B tr td{border:#CCC 1px solid}
+
+#table_C tr td{border:#CCC 1px solid}
+
+/* 텍스트 정렬, 포인트 */
+.txt-center {text-align:center}
+.txt-right {text-align:right}
+.txt-left {text-align:left}
+.point {color:#ed7b00; font-weight:bold}
+.c-blue {color:blue}
+.c-red {color:red}
+
+/* 그리드 기본셋팅(list) */
+.grid {margin:0 0 10px 0}
+.grid table {width:100%; border-left:1px #D3D8E0 solid}
+.grid table th {border-right:1px #D3D8E0 solid; border-bottom:1px #D3D8E0 solid; background:#4693b9; color:#fff; line-height:28px; padding:0 5px; text-align:center;}
+.grid table td {border-bottom:1px #D3D8E0 solid; border-right:1px #D3D8E0 solid; color:#555555; line-height:28px;min-height:28px;  padding:0 5px; vertical-align:middle;}
+.grid table tr:hover {background:#f4f4f4}
+.grid table .tr-case1, .grid table .tr-case1:hover {background:#e9f3d5}
+.grid table .tr-case2, .grid table .tr-case2:hover {background:#d8f3e9}
+.grid table .tr-case3, .grid table .tr-case3:hover {background:#edf9fc;}
+.grid table .tr-hover:hover {background:#f4f4f4}
+.grid .text-txt {margin:0 3px 2px 5px; vertical-align:middle}
+.grid .check-txt {margin:1px 4px 2px 5px; vertical-align:middle}
+.grid .radio-txt {margin:0 3px 2px 5px; vertical-align:middle}
+.grid a {color:#0b7cdf; font-weight:bold}
+.grid a:hover {color:#ee3b33}
+.grid h1 {font-size:14px; padding:0 0 2px 3px}
+.grid h1 span {background:url('../images/icon-all.png') no-repeat; background-position: 0 0; width: 16px; height: 16px; display:block; float:left; padding-right:3px}
+.grid h2 {font-size:13px; padding:0 0 2px 3px}
+.grid h2 span {background:url('../images/icon-all.png') no-repeat; background-position: 0 -19px; width: 10px; height: 10px; display:block; float:left; margin:3px 3px 0 0}
+.grid input[type="text"] {margin:0 3px 0 0; vertical-align:middle}
+.grid input[type="checkbox"] {margin:0 4px 2px 5px; vertical-align:middle}
+.grid input[type="radio"] {margin:0 3px 2px 5px; vertical-align:middle}
+.grid select {margin:0 3px 0 0; vertical-align:middle}
+.grid textarea {margin:2px 3px 2px 0; vertical-align:middle}
+
+/* 그리드 해더 고정 */
+.fix-grid {display:table;table-layout:fixed; width:100%; position:relative;}
+.fix-table {position:relative; overflow-y:auto;}
+.fix-table thead th, .fix-table tbody td {padding:0 5px; margin:0}
+:root .fix-table {padding-bottom:47px \0/IE9; height:180px \0/IE9;}  /* height:150px \0/IE9 : 가로사이즈 가변 높이 ie9에서만 적용 */
+.fix-thead {overflow:hidden; height:29px}
+.fix-thead table {table-layout:fixed;position:absolute;top:0;left:0; padding-right:17px}
+.fix-tbody {overflow-x:hidden;overflow-y:scroll; border-bottom:1px #dddddd solid; height:180px;}  /* height:150px : 가로사이즈 가변 높이*/
+.fix-tbody table {border-top:none;table-layout:fixed;margin-right:17px;}
+
+/* added */
+#tabs {height:370px;}
+.ui-datepicker-trigger {margin-right:5px; vertical-align:middle; }
+.time {width:95%; margin:1px 0}
+
+.modalPop{display:none;}
+.modalPop .btnArea{margin-top:10px;text-align:center;}
+.popButton {text-align:center; padding:10px 5px 5px 5px;}
+.modal {margin:0 0 10px 0}
+.modal table {width:100%; border-top:1px #D3D8E0 solid; border-left:1px #D3D8E0 solid}
+.modal table th {border-right:1px #D3D8E0 solid; border-bottom:1px #D3D8E0 solid; background:#4693b9; color:#fff; line-height:24px; padding:0 5px;  text-align:center;}
+.modal table td {border-bottom:1px #D3D8E0 solid; border-right:1px #D3D8E0 solid; color:#555555; padding:5px 5px 5px 5px; vertical-align:middle;}
+
+/* loading layer */
+.ui-widget-overlay2{position: fixed;top: 0px; left: 0px; width: 100%; height: 100%; background:url(/resources/js/lib/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png);}
+.loadingLayer{}
+.loadingLayer .loadingBox{width:202px;height:93px;padding:27px 0 0 22px;background:url(/resources/images/admin/bg_loading.png) no-repeat;}
+.loadingLayer .loadingBox p{margin-top:5px;height:30px;}
+
+.ellipsis{
+	white-space:nowrap;
+	text-overflow:ellipsis;		/* IE, Safari */
+	-o-text-overflow:ellipsis;		/* Opera under 10.7 */
+	overflow:hidden;			/* "overflow" value must be different from "visible" */ 
+	-moz-binding: url('ellipsis.xml#ellipsis');
+}
+

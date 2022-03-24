@@ -1,0 +1,75 @@
+/*
+
+Kanban TaskBoard 2.0.9
+Copyright(c) 2009-2016 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/license
+
+*/
+
+.sch-usermenu .x-menu-item-icon {
+    opacity         : 0.4;
+}
+
+.sch-user-selected .x-menu-item-icon {
+    opacity         : 1;
+}
+
+.sch-userpicture-view .sch-user {
+    position           : relative;
+    float              : left;
+    margin             : 0 5px 5px 5px;
+    text-align         : center;
+    line-height        : 14px;
+    color              : #333;
+    font-size          : 10px;
+    height             : 80px;
+    width              : 55px;
+    overflow           : hidden;
+    cursor             : pointer;
+    left               : 0;
+    top                : 0;
+    opacity            : 0.6;
+    -webkit-transition : opacity 0.4s;
+    -moz-transition    : opacity 0.4s;
+    -ms-transition     : opacity 0.4s;
+    -o-transition      : opacity 0.4s;
+    transition         : opacity 0.4s;
+}
+
+.sch-userpicture-view .sch-user img {
+
+    width         : 50px;
+    border-radius : 100%;
+    border        : 1px solid #fff;
+    padding       : 1px;
+}
+
+.sch-user-selected,
+.sch-user-selected .x-menu-item-text
+{
+    font-weight  : bold;
+}
+
+.sch-userpicture-view .sch-user-selected {
+    top          : -5px;
+    left         : -5px;
+    width        : 70px;
+    margin-right : -10px;
+    opacity      : 1;
+}
+
+.sch-userpicture-view .sch-user-hover {
+    opacity : 0.8;
+}
+
+.sch-userpicture-view .sch-user-hover img {
+    border-color : #ccc;
+}
+
+.sch-userpicture-view .sch-user-selected img {
+    box-shadow   : 1px 1px 3px #aaa;
+    border-color : #666;
+    width        : 60px;
+
+}

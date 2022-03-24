@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- including ECharts file -->
+    <link rel="stylesheet" type="text/css" href="chart.css" />
+    <script src="echarts/echarts.min.js"></script>
+</head>
+<body>
+        <div id="main" />
+    <script type="text/javascript">
+    //     // based on prepared DOM, initialize echarts instance
+    var myChart = echarts.init(document.getElementById('main'));
+    //var dataAxis = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'];
+    //var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+    var dataAxis = [];
+    var data1 = [];
+    var data2 = [];
+    var data3 = [];
+    var data4 = [];
+
+    for (var i = 0; i < 31; i++) {
+        var d = (i+1) +'';
+        if(d.length>1) {
+            d = '03/' + d;
+        } else {
+            d = '03/0' + d;
+        }
+        dataAxis.push(d);
+        data1.push(10*(Math.random() * 2).toFixed(2));
+        data2.push(10*Math.random().toFixed(2));
+        data3.push(10*(Math.random() * 5).toFixed(2));
+        data4.push(10*(Math.random() + 0.3).toFixed(2));
+    }
+    
+    
+    
+    var yMax = 100;
+    var dataShadow = [];
+
+    for (var i = 0; i < data1.length; i++) {
+        dataShadow.push(yMax);
+    }
+
+    // var itemStyle = {
+    //     normal: {
+    //     },
+    //     emphasis: {
+    //         barBorderWidth: 1,
+    //         shadowBlur: 10,
+    //         shadowOffsetX: 0,
+    //         shadowOffsetY: 0,
+    //         shadowColor: 'rgba(0,0,0,0.5)'
+    //     }
+    // };
+
+    var itemStyle = [];
+
+    var colors = ['#B0D698', '#3493DF',  '#084695', '#FFD57E', '#979797', '#AA4643',  '#FF9655', '#FFF263', '#6AF9C4'];
+
+    for(var i=0; i<colors.length; i++) {
+        
+        var color = colors[i];
+        var colorE= '#FFFFFF';
+      	switch(color) {
+      	case '#B0D698':
+      		colorE= '#4D9624';
+      		break;
+      	case '#3493DF':
+      		colorE= '#215989';
+      		break;
+      	case '#084695':
+      		colorE= '#05214F';
+      		break;
+      	case '#FFD57E':
+      		colorE= '#D39324';
+      		break;
+      	case '#979797':
+      		colorE= '#5D5E64';
+      		break;
+      	case '#AA4643':
+      		colorE= '#E05555';
+      		break;
+     		default:
+     			 colorE= '#AAAAAA';
+          }
+
+          itemStyle[i] =  {
+            normal: {
+                color: new echarts.graphic.LinearGradient(
+                    1, 1, 0, 1,
+                    [
+                        {offset: 0, color: color},
+                        {offset: 1, color: colorE}
+                    ]
+                )
+            },
+            emphasis: {
+            barBorderWidth: 1,
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: colorE},
+                        {offset: 1, color: color}
+                    ]
+                )
+            }
+        };
+          
+    }
+
+    // var itemStyle1 = {
+    //     normal: {
+    //         color: new echarts.graphic.LinearGradient(
+    //             0, 0, 0, 1,
+    //             [
+    //                 {offset: 0, color: '#83bff6'},
+    //            //     {offset: 0.5, color: '#188df0'},
+    //                 {offset: 1, color: '#188df0'}
+    //             ]
+    //         )
+    //     },
+    //     emphasis: {
+    //         color: new echarts.graphic.LinearGradient(
+    //             0, 0, 0, 1,
+    //             [
+    //                 {offset: 0, color: '#2378f7'},
+    //                 {offset: 0.7, color: '#2378f7'},
+    //                 {offset: 1, color: '#83bff6'}
+    //             ]
+    //         )
+    //     }
+    // };
+
+    option = {
+        title: {
+            left: 'center',
+            top: 10,
+            text: '사용자 접속현황',
+            subtext: '막대를 선택하여 확대하세요.'
+        },
+        xAxis: {
+            data: dataAxis//,
+            // axisLabel: {
+            //     textStyle: {
+            //         color: '#fff'
+            //     }
+            // },
+            // axisTick: {
+            //     show: false
+            // },
+            // axisLine: {
+            //     show: false
+            // },
+            //z: 10
+        },
+        yAxis: {
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        dataZoom: [
+            {
+                type: 'inside'
+            }
+        ],
+        // series: [
+        //     { // For shadow
+        //         type: 'bar',
+        //         itemStyle: {
+        //             normal: {color: 'rgba(0,0,0,0.05)'}
+        //         },
+        //         barGap:'-100%',
+        //         barCategoryGap:'40%',
+        //         data: dataShadow,
+        //         animation: false
+        //     },
+        //     {
+        //         type: 'bar',
+        //         itemStyle: {
+        //             normal: {
+        //                 color: new echarts.graphic.LinearGradient(
+        //                     0, 0, 0, 1,
+        //                     [
+        //                         {offset: 0, color: '#83bff6'},
+        //                         {offset: 0.5, color: '#188df0'},
+        //                         {offset: 1, color: '#188df0'}
+        //                     ]
+        //                 )
+        //             },
+        //             emphasis: {
+        //                 color: new echarts.graphic.LinearGradient(
+        //                     0, 0, 0, 1,
+        //                     [
+        //                         {offset: 0, color: '#2378f7'},
+        //                         {offset: 0.7, color: '#2378f7'},
+        //                         {offset: 1, color: '#83bff6'}
+        //                     ]
+        //                 )
+        //             }
+        //         },
+        //         data: data
+        //     }
+        // ]
+        series: [
+            // { // For shadow
+            //     type: 'bar',
+            //     itemStyle: {
+            //         normal: {color: 'rgba(0,0,0,0.05)'}
+            //     },
+            //     barGap:'-100%',
+            //     barCategoryGap:'40%',
+            //     data: dataShadow,
+            //     animation: false
+            // },
+            {
+                barCategoryGap:'50%',
+                name: 'bar',
+                type: 'bar',
+                stack: 'one',
+                itemStyle: itemStyle[0],
+                data: data1
+            },
+            {
+                name: 'bar2',
+                type: 'bar',
+                stack: 'one',
+                itemStyle: itemStyle[1],
+                data: data2
+            },
+            {
+                name: 'bar3',
+                type: 'bar',
+                stack: 'one',
+                itemStyle: itemStyle[2],
+                data: data3
+            },
+            {
+                name: 'bar4',
+                type: 'bar',
+                stack: 'one',
+                itemStyle: itemStyle[3],
+                data: data4
+            }
+        ]
+    };
+
+    // Enable data zoom when user click bar.
+    var zoomSize = 6;
+    myChart.on('click', function (params) {
+        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+        console.log('params', params);
+        console.log('dataAxis', dataAxis);
+        console.log('data1', data1);
+        myChart.dispatchAction({
+            type: 'dataZoom',
+            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data1.length - 1)]
+        });
+    });
+    // use configuration item and data specified to show chart
+    myChart.setOption(option);
+
+    window.onresize = function() {
+        myChart.resize();
+    };
+    // var zoomSize = 6;
+    // myChart.on('click', function (params) {
+    //     console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    //     myChart.dispatchAction({
+    //         type: 'dataZoom',
+    //         startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+    //         endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    //     });
+    // });
+</script>
+
+<script type="text/javascript">
+     
+    </script>
+</body>
+</html>

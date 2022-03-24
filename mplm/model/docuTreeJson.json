@@ -1,0 +1,97 @@
+{
+    "text": ".",
+    "children": [
+        {
+            "task": "문서관리",
+            "duration": 13.25,
+            "user": "품질팀",
+            "iconCls": "tree-grid-task-folder",
+            "expanded": true,
+            "children": [
+                {
+                    "task": "품질 문서",
+                    "duration": 1.25,
+                    "user": "품질팀",
+                    "iconCls": "tree-grid-task-folder",
+                    "children": [
+                        {
+                            "task": "안전",
+                            "duration": 0.25,
+                            "user": "품질팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task"
+                        }, {
+                            "task": "일정",
+                            "duration": 0.4,
+                            "user": "품질팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task",
+                            "done": true
+                        }, {
+                            "task": "통계",
+                            "duration": 0.4,
+                            "user": "품질팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task"
+                        }
+                    ]
+                }, {
+                    "task": "영업 문서",
+                    "duration": 12,
+                    "user": "영업팀",
+                    "iconCls": "tree-grid-task-folder",
+                    "expanded": true,
+                    "children": [
+                        {
+                            "task": "안전",
+                            "duration": 6.5,
+                            "user": "영업팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task"
+                        }, {
+                            "task": "일정",
+                            "duration": 2.75,
+                            "user": "영업팀",
+                            "iconCls": "tree-grid-task-folder",
+                            "children": [
+                                {
+                                    "task": "18년 6월",
+                                    "duration": 1.25,
+                                    "user": "영업팀",
+                                    "iconCls": "tree-grid-task",
+                                    "leaf": true
+                                }, {
+                                    "task": "18년 5월",
+                                    "duration": 1.5,
+                                    "user": "영업팀",
+                                    "iconCls": "tree-grid-task",
+                                    "leaf": true
+                                }
+                            ]
+                        }, {
+                            "task": "통계",
+                            "duration": 2.75,
+                            "user": "영업팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task",
+                            "done": true
+                        }, {
+                            "task": "고객사",
+                            "duration": 1.75,
+                            "user": "영업팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task",
+                            "done": true
+                        }, {
+                            "task": "기타",
+                            "duration": 2,
+                            "user": "영업팀",
+                            "leaf": true,
+                            "iconCls": "tree-grid-task"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

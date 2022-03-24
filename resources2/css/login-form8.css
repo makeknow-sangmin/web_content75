@@ -1,0 +1,57 @@
+/*-------------- jman85 이상 프로젝트 로그인 폼 --------------*/
+html,body	{
+	height:100%;
+}
+body {
+	height:100%;
+	overflow:hidden;
+	font-family:'Verdana','Malgun Gothic';
+	font-size:13px;
+}
+*	{
+		font-family:'Verdana','Malgun Gothic';
+		font-size:13px;
+	}
+
+.main-background {
+	width:100%;
+	height:100%;
+}
+
+.myTextField {
+	font-size: 24px !important;
+	font-family: "Arial" !important;
+	background-color: #ecf0f1 !important;
+	color: #333333 !important;
+	border : none;
+}
+
+.myForm {
+	box-shadow: 0 0 10px #999999;
+}
+
+.loginBtn {
+	border-radius: 0em !important;
+	border-width: 0px !important;
+}
+
+.loginBtn .x-btn-inner {
+	font-family: 'Noto Sans CJK KR' !important;
+	font-weight: 500;
+}
+
+.groupwareBtn {
+	border-radius: 0em !important;
+	/*border-width: 0px !important;*/
+	background-color: white !important;
+}
+
+.groupwareBtn .x-btn-inner {
+	color: black;
+	font-family: 'Noto Sans CJK KR' !important;
+	font-weight: 500;
+}
+
+.rememberme_chk .x-form-cb-label {
+	font-size: 100px !important;
+}

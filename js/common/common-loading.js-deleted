@@ -1,0 +1,73 @@
+var gfnLoading = {
+			
+			searchButtonToggle : function(){
+			//검색 버튼 반복호출 방지
+				$('#searchButton').attr("disabled","disabled");
+				setInterval(function(){	$('#searchButton').removeAttr("disabled"); },1300);
+			},
+			
+			showLoadingBar : function(type) {
+				if(loadingBar != null && typeof(loadingBar) != "undefined"){
+					if($(loadingBar).css("display") == "none"){
+						if(type =="iframe"){
+							loadingType="iframe";
+						}
+						else{
+							loadingType="Layout";
+						}						
+
+						if(loadingBar.length > 1){
+							loadingBar[0].style.display="block";
+						}else{
+							loadingBar.style.display = "block";
+						}
+					}
+				}
+			},
+			
+			hideLoadingBar : function(){
+				if (typeof(loadingBar) != "undefined" && loadingBar != null)
+				{
+					if(loadingBar.length > 1){
+						loadingBar[0].style.display="none";
+					}
+					else{
+						loadingBar.style.display = "none";
+					}
+				}
+			},
+			
+			showIframeLoadingBar : function(){
+				var ploadingbar = parent.document.getElementById("loadingBar");
+				if(typeof(ploadingbar) != "undefined" && ploadingbar != null){
+					if($(ploadingbar).css("display") == "none"){
+						parent.loadingType="iframe";
+						ploadingbar.style.display = "block";
+					}
+				}
+			},
+			
+			hideIframeLoadingBar : function(){
+				try {
+					var ploadingbar = parent.document.getElementById("loadingBar");
+					if(typeof(ploadingbar) != "undefined" && ploadingbar != null){
+						if(parent.loadingType !="Layout"){
+							ploadingbar.style.display = "none";
+						}
+					}
+				} catch (e) {
+				}
+			},
+			
+			hideLayoutLoadingBar : function(){
+				//프레임 구조에 의해 에러가 나는 것을 방지
+				try {
+					var ploadingbar = parent.document.getElementById("loadingBar");
+					if(typeof(ploadingbar) != "undefined" && ploadingbar != null){
+						ploadingbar.style.display = "none";
+					}
+				} catch (err) {
+					
+				}
+			}
+	};

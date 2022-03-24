@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+a, abbr, acronym, address, 
+b, blockquote, big, body,
+center, caption, cite, code, command,
+ dd, del, dfn, dl, div, dt, 
+em, embed,
+fieldset, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img,
+label, legend, li, 
+object, ol,
+p, pre, 
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, 
+u, ul, input
+var {margin:0; padding:0}
+h1,h2,h3,h4,h5,h6 {font-size:100% }
+ol, ul {list-style:none}
+/* table {border-collapse:collapse; border-spacing:0} */
+table {border-spacing:0}
+fieldset, img {border:0}
+img, input, button, select, textarea {vertical-align:middle}
+caption, th {text-align:left }
+
+/*----------------------------------------------------------------*/
+
+
+
+html,body{font-size:12px; color:#666; font-family:"맑은 고딕"; width:100%; height:100%; overflow:auto}
+#none{border:none !important}
+.imgpding{padding-right:3px}
+.trbg{background:#eef3fd}
+.btn{height:70px; text-align:right}
+#btn02{float:right; display:block; margin:30px 30px 0 0; }
+.inputwidth{width:110px; margin:0 5px}
+.inputwidth02{width:350px; margin:0 5px}
+.inputwidth03{width:150px}
+#period{text-indent:10px; height:45px}
+#period02{text-align:right; height:35px; padding-right:5px}
+.thead{font-weight:bold; color:#fff; background:#5a7dbf; text-align:center}
+.selwidht{width:80px; margin:1px 0}
+.selwidht02{width:150px; margin:1px 0}
+.total{text-align:right; padding-right:10px; font-weight:bold}
+.pdleft{padding-left:5px}
+#headtext{overflow-y:scroll; overflow-x:hidden; width:99%; float:left; 
+  scrollbar-face-color:#fff;
+  scrollbar-3dlight-color:#fff;
+  scrollbar-highlight-color:#fff;
+  scrollbar-shadow-color:#fff;
+  scrollbar-darkshadow-color:#fff;
+  scrollbar-arrow-color:#fff;
+  scrollbar-track-color:#fff;}
+#text{overflow-y:scroll; overflow-x:hidden; width:99%; height:300px; float:left}
+/* #contents{float:left; position:absolute; left:155px; z-index:10;} */
+#contents{margin:10px 10px 10px 10px;}
+
+/* #top{width:100%; height:47px; position:relative; background:url(../images/bg_top.gif) repeat-x 0 0} */
+#top{width:100%; height:47px; position:relative; background:url(../images/toparea-bg.png) repeat-x 0 0}
+h1{position:absolute; top:15px; left:15px}
+#top_right{float:right; position:relative; top:8px; right:10px}
+.user{color:#fff; vertical-align:bottom; width:200px}
+.user>img{padding-right:3px}
+
+#left{width:146px; height:100%; float:left; background:url(../images/bg_left.gif) repeat-y 0 0; /*border-right:1px solid #c0c0c0*/}
+#menu01{width:146px; height:630px}
+#menu01 a{display:block; width:131px; height:30px; background:url(../images/menu_bg.png) no-repeat 0 0; text-decoration:none; color:#383d40; font-weight:bold; font-size:14px; padding:12px 0 0 15px}
+#menu01 a:hover{color:#d85200}
+#menu02 a{text-indent:10px; font-size:13px; color:#004584}
+#menu03 a{text-indent:22px; font-size:12px; color:#38739c}
+/* #menu03 li:first-child a{background:url(../images/menu_bg_on.png) no-repeat 0 0} */
+#menu01 li a.on{background:url(../images/menu_bg_on.png) no-repeat 0 0}
+#menu02 li a.on{background:url(../images/menu_bg_on.png) no-repeat 0 0}
+#menu03 li a.on{background:url(../images/menu_bg_on.png) no-repeat 0 0}
+#menu02 a.on{background:url(../images/menu_bg_on.png) no-repeat 0 0}
+#menu03 a.on{background:url(../images/menu_bg_on.png) no-repeat 0 0}
+
+
+h2{width:140px; height:16px; position:relative; top:20px; left:20px}
+#tab_C{position:relative; top:35px; left:0px}
+#tab_boxC{width:100%; float:left}
+#tab_C ul{padding-left:20px}
+#tab_boxC ul li{float:left}
+#boxC{border:1px solid #9aafb4; width:100%; height:300px; position:relative; top:-1px; z-index:-10; float:left}
+#table_C{width:98%; margin:15px; float:left}
+#table_C tr td, #table_D tr td, #table_E tr td, #table_F tr td, #table_G tr td, #table_J tr td, #tab_data tr td, #tab_cmmCodeDtl tr td, #tab_menuManageDtl tr td, #list_authority tr td, #list_authority2 tr td, #list_user tr td, #list_menu tr td, #list_authorityByUser tr td, #list_authorityBymenu tr td, #table_R tr td, #table_S tr td{border:#CCC 1px solid; height:30px}
+#table_C thead, #tab_data thead{font-weight:bold; color:#fff; background:#5a7dbf; text-align:center}
+#table_C tbody, #tab_data tbody, #tab_cmmCodeDtl tbody, #tab_menuManageDtl tbody, #list_authority tbody, #list_authority2 tbody, #list_user tbody, #list_menu tbody, #list_authorityByUser tbody, #list_authorityBymenu tbody, #table_R tbody, #table_S tbody{height:30px; text-align:center}
+
+#boxD{float:left; width:100%; position:relative; height:500px; top:30px}
+#table_D, #table_J{width:98%; margin-left:15px}
+#table_E, #table_F, #table_G{width:98%; margin-left:15px; text-align:center}
+#boxF{position:relative; top:20px}
+#boxH{border:1px solid #9aafb4; width:100%; position:relative; top:-1px; z-index:-10; float:left}
+
+#contents05, #contents06{position:relative}
+#table_J{position:absolute; top:60px; width:97%}
+#tab_data{position:absolute; top:140px; width:30%; margin-left:15px}
+#tab_data tfoot{font-weight:bold; background:#eef3fd; text-align:center}
+#div_chart_basic{position:absolute; top:140px; left:32%; border:1px solid #ccc; height:600px}
+
+#boxG{width:100%; height:200px; position:absolute; top:60px; left:15px}
+#boxG_01, #boxG_02, #boxG_03, #boxG_04{width:24.3%; height:200px; margin-right:5px; border:#CCC 1px solid; float:left}
+#boxJ{width:97%; height:500px; position:absolute; top:290px; left:15px}
+#tab_cmmCodeDtl, #tab_menuManageDtl, #table_M{width:100%; float:left}
+
+#boxK{width:98%; height:300px; position:relative; top:60px; left:15px}
+#list_authority2{width:100%}
+#table_S{width:99%}
+
+#boxL{width:98%; height:90%; position:relative; top:60px; left:15px}
+#boxL_01{width:100%; height:210px}
+#list_user, #list_menu {width:72%; float:left}
+#list_authority{width:27%; float:left; margin-left:10px}
+#list_authorityByUser, #list_authorityBymenu{width:99.6%}
+
+#A{width:100%; height:100%}
+
+#box_C{width:99%; height:33px; float:left; margin-top:5px; border:1px dashed #9aafb4}
+#box_C ul li{margin:8px 0 0 13px}
+
+
+/* 텍스트 정렬, 포인트 */
+.txt-center {text-align:center}
+.txt-right {text-align:right}
+.txt-left {text-align:left}
+.point {color:#ed7b00; font-weight:bold}
+.c-blue {color:blue}
+.c-red {color:red}
+
+/* 그리드 기본셋팅(list) */
+.grid {margin:0 0 10px 0}
+.grid table {width:100%; border-left:1px #D3D8E0 solid}
+.grid table th {border-right:1px #D3D8E0 solid; border-bottom:1px #D3D8E0 solid; background:#5a7dbf; color:#fff; line-height:28px; padding:0 5px; text-align:center;}
+.grid table td {border-bottom:1px #D3D8E0 solid; border-right:1px #D3D8E0 solid; color:#555555; line-height:28px;min-height:28px;  padding:0 5px; vertical-align:middle;}
+.grid table tr:hover {background:#f4f4f4}
+.grid table .tr-point, .grid table .tr-point:hover {background:#f4eeac}	/* 20141030 테이블  tr 클릭시 색상변경 추가*/
+.grid table .tr-case1, .grid table .tr-case1:hover {background:#e9f3d5}
+.grid table .tr-case2, .grid table .tr-case2:hover {background:#d8f3e9}
+.grid table .tr-case3, .grid table .tr-case3:hover {background:#edf9fc;}
+.grid table .tr-hover:hover {background:#f4f4f4}
+.grid .text-txt {margin:0 3px 2px 5px; vertical-align:middle}
+.grid .check-txt {margin:1px 4px 2px 5px; vertical-align:middle}
+.grid .radio-txt {margin:0 3px 2px 5px; vertical-align:middle}
+.grid a {color:#0b7cdf; font-weight:bold}
+.grid a:hover {color:#ee3b33}
+.grid h1 {font-size:14px; padding:0 0 2px 3px}
+.grid h1 span {background:url('../images/icon-all.png') no-repeat; background-position: 0 0; width: 16px; height: 16px; display:block; float:left; padding-right:3px}
+.grid h2 {font-size:13px; padding:0 0 2px 3px}
+.grid h2 span {background:url('../images/icon-all.png') no-repeat; background-position: 0 -19px; width: 10px; height: 10px; display:block; float:left; margin:3px 3px 0 0}
+.grid input[type="text"] {margin:0 3px 0 0; vertical-align:middle}
+.grid input[type="checkbox"] {margin:0 4px 2px 5px; vertical-align:middle}
+.grid input[type="radio"] {margin:0 3px 2px 5px; vertical-align:middle}
+.grid select {margin:0 3px 0 0; vertical-align:middle}
+.grid textarea {margin:2px 3px 2px 0; vertical-align:middle}
+
+.table-list td {line-height:28px; text-align:center;}
+.table-list .tr-point, .table-list .tr-point:hover {background:#f4eeac}
+.table-list .tr-stop, .table-list .tr-stop:hover {background:#f2a8a1}
+.table-list .tr-edit, .table-list .tr-edit:hover {background:#a6cff2}
+
+/* 그리드 해더 고정 */
+.fix-grid {display:table;table-layout:fixed; width:100%; position:relative; }
+/* .fix-table {position:relative; overflow-x:auto;overflow-y:auto;} */
+.fix-table {position:relative; overflow-x:hidden;overflow-y:hidden;}
+.fix-table thead th, .fix-table tbody td {padding:0 5px; margin:0}
+:root .fix-table {padding-bottom:47px \47/IE9; height:150px \150/IE9;}  /* height:150px \0/IE9 : 가로사이즈 가변 높이 ie9에서만 적용 */
+.fix-thead {overflow:hidden; height:29px}
+.fix-thead table {table-layout:fixed;position:absolute;top:0;left:0; padding-right:17px}
+.fix-tbody {overflow-y:scroll;overflow-x:hidden; border-bottom:1px #dddddd solid; height:200px;}  /* height:150px : 가로사이즈 가변 높이*/
+.fix-tbody table {border-top:none;table-layout:fixed;margin-right:17px;}
+.fix-thead2 {overflow:hidden; height:58px}
+.fix-thead2 table {table-layout:fixed;position:absolute;top:0;left:0; padding-right:17px}
+.fix-tbody2 {overflow-y:scroll;overflow-x:hidden; border-bottom:1px #dddddd solid; height:120px;}  /* height:150px : 가로사이즈 가변 높이*/
+.fix-tbody2 table {border-top:none;table-layout:fixed;margin-right:17px }
+.fix-tfoot {overflow:hidden; height:29px; background-color:#f0f0f0;}
+.fix-tfoot table {table-layout:fixed;position:absolute;top:398px;left:0; padding-right:17px}
+
+/* added */
+.sub_title {text-align:left; font-weight:bold; font-size:13px; padding:7px 0px 7px 0px;}
+#tabs {height:400px;}
+.ui-datepicker-trigger {margin-right:5px; vertical-align:middle; }
+.time {width:95%; height:21px; margin:1px 0}
+.on {background:url(../images/menu_bg_on.png) no-repeat 0 0}
+
+.modalPop{display:none;}
+.modalPop .btnArea{margin-top:10px;text-align:center;}
+.popButton {text-align:center; padding:10px 5px 5px 5px;}
+.modal {margin:0 0 10px 0}
+.modal table {width:100%; border-top:1px #D3D8E0 solid; border-left:1px #D3D8E0 solid}
+.modal table th {border-right:1px #D3D8E0 solid; border-bottom:1px #D3D8E0 solid; background:#5a7dbf; color:#fff; line-height:28px; padding:0 5px;  text-align:center;}
+.modal table td {border-bottom:1px #D3D8E0 solid; border-right:1px #D3D8E0 solid; color:#555555; line-height:28px;min-height:28px;  padding:5px 5px 5px 5px; vertical-align:middle;}
+
+/* loading layer */
+.ui-widget-overlay2{position: fixed;top: 0px; left: 0px; width: 100%; height: 100%; background:url(/resources/js/lib/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png);}
+.loadingLayer{}
+.loadingLayer .loadingBox{width:202px;height:93px;padding:27px 0 0 22px;background:url(/resources/images/admin/bg_loading.png) no-repeat;}
+.loadingLayer .loadingBox p{margin-top:5px;height:30px;}
+
+.ellipsis{
+	white-space:nowrap;
+	text-overflow:ellipsis;		/* IE, Safari */
+	-o-text-overflow:ellipsis;		/* Opera under 10.7 */
+	overflow:hidden;			/* "overflow" value must be different from "visible" */ 
+	-moz-binding: url('ellipsis.xml#ellipsis');
+}
+
+/* paging */
+.page {width:100%; float:left; margin-top:20px; text-align:center}
+.page_no {width:100%; color:#96b647}
+.page_no li {width:50px; display:inline}
+a.page_no {color:#4F3A29}
+a.page_no:hover {color:#96b647; font-weight:bold}
+.page_pre {margin-right:10px}
+.page_next {margin-left:10px}
+
+#paging{text-align:center; padding-bottom:10px;}
+a.paging-item,a.paging-side{margin:0 .25em;}
+a.paging-item.selected{font-weight:bold;}
+
+/* added for statistic */
+.stat_sub_title {text-align:left; font-weight:bold; font-size:13px; padding:7px 0px 7px 0px; color: #003366}

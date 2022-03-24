@@ -1,0 +1,35 @@
+.sch-event {
+    border-radius : 12px;
+    box-shadow    : 1px 1px 1px rgba(100, 100, 100, 0.2);
+    background    : #CDE6F3 url('images/bg.png') repeat-x;
+    border-color  : #999A9C;
+    border-style  : solid;
+    color         : #1C417C;
+    cursor        : pointer;
+    text-align    : center;
+}
+
+.sch-event-inner {
+    border-radius : inherit;
+}
+
+div.sch-event-hover {
+    border-color : #333;
+}
+
+.summary-event {
+    position   : absolute;
+    top        : 50%;
+    margin-top : -5px;
+    height     : 11px;
+    background : #7971e2;
+    border     : 1px solid #6951a2;
+    font-size  : 8px;
+    color      : #fff;
+    text-align : center;
+}
+
+.sch-header-row-bottom .sch-simple-timeheader {
+    position : relative;
+    overflow : visible;
+}
